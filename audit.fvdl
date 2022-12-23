@@ -1,0 +1,3009 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FVDL xmlns="xmlns://www.fortifysoftware.com/schema/fvdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.12" xsi:type="FVDL">
+<CreatedTS date="2022-12-21" time="14:52:59"/>
+<WriteDate date="2022-12-21" time="14:52:59.542Z"/>
+<UUID>e1ca35b4-5e6d-450b-b435-92ee3bf91926</UUID>
+<Build>
+  <BuildID>sqli_1</BuildID>
+  <NumberFiles>25</NumberFiles>
+  <LOC type="Fortify">17</LOC>
+  <LOC type="Line Count">478</LOC>
+  <LOC type="Function Declarations">508</LOC>
+  <LOC type="Function Definitions">420</LOC>
+  <LOC type="Regex Scanned Line Count">3878</LOC>
+  <SourceBasePath>/fortify/80d9c432-72fd-4737-a748-826995cf6ff2/work/Src/sqli_1</SourceBasePath>
+  <SourceFiles>
+    <File size="1960" timestamp="1671634348667" loc="36" type="yaml" encoding="US-ASCII">
+      <Name>config/FoDToGitLab.yml</Name>
+      <LOC type="Fortify">36</LOC>
+      <LOC type="Line Count">36</LOC>
+    </File>
+    <File size="883" timestamp="1671634348667" loc="21" type="yaml" encoding="US-ASCII">
+      <Name>config/FoDToJsonRaw.yml</Name>
+      <LOC type="Fortify">21</LOC>
+      <LOC type="Line Count">21</LOC>
+    </File>
+    <File size="688" timestamp="1671634348667" loc="19" type="yaml" encoding="US-ASCII">
+      <Name>config/SSCToJsonRaw.yml</Name>
+      <LOC type="Fortify">19</LOC>
+      <LOC type="Line Count">19</LOC>
+    </File>
+    <File size="1406" timestamp="1671634348667" loc="28" type="yaml" encoding="US-ASCII">
+      <Name>config/FoDToGitLabDAST.yml</Name>
+      <LOC type="Fortify">28</LOC>
+      <LOC type="Line Count">28</LOC>
+    </File>
+    <File size="1788" timestamp="1671634348667" loc="34" type="yaml" encoding="US-ASCII">
+      <Name>config/SSCToGitLab.yml</Name>
+      <LOC type="Fortify">34</LOC>
+      <LOC type="Line Count">34</LOC>
+    </File>
+    <File size="1577" timestamp="1671634348667" loc="23" type="yaml" encoding="US-ASCII">
+      <Name>config/FoDToBitBucket.yml</Name>
+      <LOC type="Fortify">23</LOC>
+      <LOC type="Line Count">23</LOC>
+    </File>
+    <File size="792" timestamp="1671634348667" loc="0" type="yaml" encoding="US-ASCII">
+      <Name>config/FoDToSonarQube.yml</Name>
+      <LOC type="Fortify">0</LOC>
+      <LOC type="Line Count">0</LOC>
+    </File>
+    <File size="287861" timestamp="1671634348667" type="html" encoding="US-ASCII">
+      <Name>README.html</Name>
+    </File>
+    <File size="1708" timestamp="1671634348667" type="generic">
+      <Name>certs4test/server.key</Name>
+    </File>
+    <File size="1246" timestamp="1671634348667" loc="23" type="yaml" encoding="US-ASCII">
+      <Name>config/FoDToGitHub.yml</Name>
+      <LOC type="Fortify">23</LOC>
+      <LOC type="Line Count">23</LOC>
+    </File>
+    <File size="1718" timestamp="1671634348667" loc="2" type="plsql" encoding="US-ASCII">
+      <Name>source/basic.sql</Name>
+      <LOC type="Fortify">2</LOC>
+      <LOC type="Line Count">4</LOC>
+    </File>
+    <File size="1166" timestamp="1671634348667" loc="22" type="yaml" encoding="US-ASCII">
+      <Name>config/FoDToGitLabSAST.yml</Name>
+      <LOC type="Fortify">22</LOC>
+      <LOC type="Line Count">22</LOC>
+    </File>
+    <File size="1125" timestamp="1671634348667" loc="22" type="yaml" encoding="US-ASCII">
+      <Name>config/SSCToGitHub.yml</Name>
+      <LOC type="Fortify">22</LOC>
+      <LOC type="Line Count">22</LOC>
+    </File>
+    <File size="694" timestamp="1671634348667" type="dockerfile" encoding="US-ASCII">
+      <Name>Dockerfile</Name>
+    </File>
+    <File size="854" timestamp="1671634348667" loc="23" type="yaml" encoding="US-ASCII">
+      <Name>config/SSCToCSV.yml</Name>
+      <LOC type="Fortify">23</LOC>
+      <LOC type="Line Count">23</LOC>
+    </File>
+    <File size="806" timestamp="1671634348667" loc="23" type="yaml" encoding="US-ASCII">
+      <Name>config/FoDToCSV.yml</Name>
+      <LOC type="Fortify">23</LOC>
+      <LOC type="Line Count">23</LOC>
+    </File>
+    <File size="220" timestamp="1671634348667" type="hocon" encoding="US-ASCII">
+      <Name>source/challenge.conf</Name>
+    </File>
+    <File size="826" timestamp="1671634348667" loc="0" type="yaml" encoding="US-ASCII">
+      <Name>config/SSCToSonarQube.yml</Name>
+      <LOC type="Fortify">0</LOC>
+      <LOC type="Line Count">0</LOC>
+    </File>
+    <File size="1923" timestamp="1671634348667" loc="40" type="yaml" encoding="US-ASCII">
+      <Name>config/FoDToJsonCustom.yml</Name>
+      <LOC type="Fortify">40</LOC>
+      <LOC type="Line Count">40</LOC>
+    </File>
+    <File size="1942" timestamp="1671634348667" loc="40" type="yaml" encoding="US-ASCII">
+      <Name>config/SSCToJsonCustom.yml</Name>
+      <LOC type="Fortify">40</LOC>
+      <LOC type="Line Count">40</LOC>
+    </File>
+    <File size="2079" timestamp="1671634348667" loc="36" type="yaml" encoding="US-ASCII">
+      <Name>config/SSCToBitBucket.yml</Name>
+      <LOC type="Fortify">36</LOC>
+      <LOC type="Line Count">36</LOC>
+    </File>
+    <File size="1034" timestamp="1671634348667" loc="20" type="yaml" encoding="US-ASCII">
+      <Name>config/SSCToGitLabDAST.yml</Name>
+      <LOC type="Fortify">20</LOC>
+      <LOC type="Line Count">20</LOC>
+    </File>
+    <File size="1063" timestamp="1671634348667" loc="21" type="yaml" encoding="US-ASCII">
+      <Name>config/SSCToGitLabSonatype.yml</Name>
+      <LOC type="Fortify">21</LOC>
+      <LOC type="Line Count">21</LOC>
+    </File>
+    <File size="1026" timestamp="1671634348667" loc="21" type="yaml" encoding="US-ASCII">
+      <Name>config/SSCToGitLabSAST.yml</Name>
+      <LOC type="Fortify">21</LOC>
+      <LOC type="Line Count">21</LOC>
+    </File>
+    <File size="960" timestamp="1671634348667" loc="15" type="php" encoding="US-ASCII">
+      <Name>source/index.php</Name>
+      <LOC type="Fortify">15</LOC>
+      <LOC type="Line Count">22</LOC>
+    </File>
+  </SourceFiles>
+  <ScanTime value="15"/>
+</Build>
+<Vulnerabilities>
+<Vulnerability>
+  <ClassInfo>
+    <ClassID>6DBD0F5A-99EB-53B7-AB1E-D9B012E68020</ClassID>
+    <Kingdom>Security Features</Kingdom>
+    <Type>Key Management</Type>
+    <Subtype>Hardcoded Encryption Key</Subtype>
+    <AnalyzerName>configuration</AnalyzerName>
+    <DefaultSeverity>3.0</DefaultSeverity>
+  </ClassInfo>
+  <InstanceInfo>
+    <InstanceID>3BDB4E7C42782AB3F07C5DF027BE370E</InstanceID>
+    <InstanceSeverity>3.0</InstanceSeverity>
+    <Confidence>5.0</Confidence>
+  </InstanceInfo>
+  <AnalysisInfo>
+    <Unified>
+      <Context/>
+      <ReplacementDefinitions>
+        <Def key="PrimaryLocation.file" value="server.key"/>
+        <Def key="PrimaryLocation.line" value="1"/>
+      </ReplacementDefinitions>
+      <Trace>
+        <Primary>
+          <Entry>
+            <Node isDefault="true">
+              <SourceLocation path="certs4test/server.key" line="1" lineEnd="1" colStart="0" colEnd="0" snippet="8BE02D3C7AB3CF229920B65905ABD185#certs4test/server.key:1:1"/>
+            </Node>
+          </Entry>
+        </Primary>
+      </Trace>
+    </Unified>
+  </AnalysisInfo>
+</Vulnerability>
+<Vulnerability>
+  <ClassInfo>
+    <ClassID>FF858C20-4BCD-4EBA-8DBA-F1502AB06D2E</ClassID>
+    <Kingdom>Input Validation and Representation</Kingdom>
+    <Type>SQL Injection</Type>
+    <AnalyzerName>dataflow</AnalyzerName>
+    <DefaultSeverity>4.0</DefaultSeverity>
+  </ClassInfo>
+  <InstanceInfo>
+    <InstanceID>4FF80FBAFD61122FF44873D26ED04633</InstanceID>
+    <InstanceSeverity>4.0</InstanceSeverity>
+    <Confidence>5.0</Confidence>
+  </InstanceInfo>
+  <AnalysisInfo>
+    <Unified>
+      <Context/>
+      <ReplacementDefinitions>
+        <Def key="PrimaryLocation.file" value="index.php"/>
+        <Def key="PrimaryLocation.line" value="32"/>
+        <Def key="SinkFunction" value="mysqli_query()">
+          <SourceLocation path="source/index.php" line="11" lineEnd="11" colStart="0" colEnd="0"/>
+        </Def>
+        <Def key="SinkLocation.file" value="index.php"/>
+        <Def key="SinkLocation.line" value="32"/>
+        <Def key="SourceLocation.file" value="index.php"/>
+        <Def key="SourceLocation.line" value="23"/>
+        <LocationDef path="source/index.php" line="32" lineEnd="32" colStart="36" colEnd="0" key="SinkLocation"/>
+        <LocationDef path="source/index.php" line="23" lineEnd="23" colStart="13" colEnd="0" key="SourceLocation"/>
+      </ReplacementDefinitions>
+      <Trace>
+        <Primary>
+          <Entry>
+            <NodeRef id="0"/>
+          </Entry>
+          <Entry>
+            <NodeRef id="1"/>
+          </Entry>
+          <Entry>
+            <NodeRef id="2"/>
+          </Entry>
+          <Entry>
+            <Node isDefault="true">
+              <SourceLocation path="source/index.php" line="32" lineEnd="32" colStart="36" colEnd="0" contextId="1" snippet="DE19806B0882A74485FAAAFA8760E9D3#source/index.php:32:32"/>
+              <Action type="InCall">mysqli_query(1)</Action>
+              <Reason>
+                <Rule ruleID="FF858C20-4BCD-4EBA-8DBA-F1502AB06D2E"/>
+              </Reason>
+              <Knowledge>
+                <Fact primary="false" type="Call">Direct : mysqli_query</Fact>
+                <Fact primary="false" type="TaintFlags">WEB, XSS</Fact>
+              </Knowledge>
+            </Node>
+          </Entry>
+        </Primary>
+      </Trace>
+    </Unified>
+  </AnalysisInfo>
+</Vulnerability>
+<Vulnerability>
+  <ClassInfo>
+    <ClassID>375B7CCC-5920-4230-AE53-A7B264045525</ClassID>
+    <Kingdom>Environment</Kingdom>
+    <Type>Dockerfile Misconfiguration</Type>
+    <Subtype>Default User Privilege</Subtype>
+    <AnalyzerName>configuration</AnalyzerName>
+    <DefaultSeverity>3.0</DefaultSeverity>
+  </ClassInfo>
+  <InstanceInfo>
+    <InstanceID>C30558D67920422BF94AC1350B33CF49</InstanceID>
+    <InstanceSeverity>3.0</InstanceSeverity>
+    <Confidence>5.0</Confidence>
+  </InstanceInfo>
+  <AnalysisInfo>
+    <Unified>
+      <Context/>
+      <Trace>
+        <Primary>
+          <Entry>
+            <Node isDefault="true">
+              <SourceLocation path="Dockerfile" line="1" colStart="0" colEnd="0" snippet="C403F8FA74F0FD9B1B7D404F444D62AD#Dockerfile:1:1"/>
+              <Action>FROM</Action>
+            </Node>
+          </Entry>
+        </Primary>
+      </Trace>
+    </Unified>
+  </AnalysisInfo>
+</Vulnerability>
+<Vulnerability>
+  <ClassInfo>
+    <ClassID>10AB223B-7AA6-464A-A036-4616C822C299</ClassID>
+    <Kingdom>Environment</Kingdom>
+    <Type>Dockerfile Misconfiguration</Type>
+    <Subtype>Dependency Confusion</Subtype>
+    <AnalyzerName>configuration</AnalyzerName>
+    <DefaultSeverity>3.5</DefaultSeverity>
+  </ClassInfo>
+  <InstanceInfo>
+    <InstanceID>C3DC9B09ABB610860B8170DF982A363B</InstanceID>
+    <InstanceSeverity>3.5</InstanceSeverity>
+    <Confidence>5.0</Confidence>
+  </InstanceInfo>
+  <AnalysisInfo>
+    <Unified>
+      <Context/>
+      <Trace>
+        <Primary>
+          <Entry>
+            <Node isDefault="true">
+              <SourceLocation path="Dockerfile" line="3" colStart="0" colEnd="0" snippet="753FBACAD3E93FBD834982031A4B8C9F#Dockerfile:3:3"/>
+              <Action>RUN</Action>
+            </Node>
+          </Entry>
+        </Primary>
+      </Trace>
+    </Unified>
+  </AnalysisInfo>
+</Vulnerability>
+</Vulnerabilities>
+<ContextPool>
+  <Context id="1"/>
+</ContextPool>
+<UnifiedNodePool>
+  <Node id="0">
+    <SourceLocation path="source/index.php" line="23" lineEnd="23" colStart="13" colEnd="0" contextId="1" snippet="5A8E6EACC1685EE4F03B373B5F01406F#source/index.php:23:23"/>
+    <Action type="Read">Read $_GET['id']</Action>
+    <Reason>
+      <Rule ruleID="FEA6DB27-D630-488F-9762-9534543C4DD90"/>
+    </Reason>
+  </Node>
+  <Node id="1">
+    <SourceLocation path="source/index.php" line="23" lineEnd="23" colStart="7" colEnd="0" contextId="1" snippet="5A8E6EACC1685EE4F03B373B5F01406F#source/index.php:23:23"/>
+    <Action type="Assign">Assignment to $id</Action>
+  </Node>
+  <Node id="2">
+    <SourceLocation path="source/index.php" line="30" lineEnd="30" colStart="7" colEnd="0" contextId="1" snippet="CE35634DA544FF17FF6A4261164333E0#source/index.php:30:30"/>
+    <Action type="Assign">Assignment to $query</Action>
+  </Node>
+</UnifiedNodePool>
+<Description contentType="preformatted" classID="FF858C20-4BCD-4EBA-8DBA-F1502AB06D2E">
+  <Abstract>&lt;Content&gt;&lt;Paragraph&gt;Line &lt;Replace key="PrimaryLocation.line"/&gt; of &lt;Replace key="PrimaryLocation.file"/&gt; invokes a SQL query built with input that comes from an untrusted source. This call could allow an attacker to modify the statement's meaning or to execute arbitrary SQL commands.&lt;AltParagraph&gt;Constructing a dynamic SQL statement with input that comes from an untrusted source might allow an attacker to modify the statement's meaning or to execute arbitrary SQL commands. &lt;/AltParagraph&gt;&lt;/Paragraph&gt;&lt;/Content&gt;</Abstract>
+  <Explanation>&lt;Content&gt;SQL injection errors occur when:
+
+1. Data enters a program from an untrusted source.
+
+&lt;Paragraph&gt;
+In this case, the data enters at &lt;Replace key="SourceFunction" link="SourceLocation"/&gt; in &lt;Replace key="SourceLocation.file"/&gt; on line &lt;Replace key="SourceLocation.line"/&gt;.
+&lt;/Paragraph&gt;
+
+2. The data is used to dynamically construct a SQL query.
+
+&lt;Paragraph&gt;
+In this case, the data is passed to &lt;Replace key="SinkFunction" link="SinkLocation"/&gt; in &lt;Replace key="SinkLocation.file"/&gt; on line &lt;Replace key="SinkLocation.line"/&gt;.
+&lt;/Paragraph&gt;
+
+&lt;b&gt;Example 1:&lt;/b&gt; The following code dynamically constructs and executes a SQL query that searches for items matching a specified name. The query restricts the items displayed to those where the owner matches the user name of the currently-authenticated user.
+
+&lt;pre&gt;
+	...
+	$userName = $_SESSION['userName'];
+	$itemName = $_POST['itemName'];
+	$query = "SELECT * FROM items WHERE owner = '$userName' AND itemname = '$itemName';";
+	$result = mysql_query($query);
+	...
+&lt;/pre&gt;
+
+The query intends to execute the following code:
+
+&lt;pre&gt;
+	SELECT * FROM items
+	WHERE owner = &amp;lt;userName&amp;gt;
+	AND itemname = &amp;lt;itemName&amp;gt;;
+&lt;/pre&gt;
+
+However, because the query is constructed dynamically by concatenating a constant query string and a user input string, the query only behaves correctly if &lt;code&gt;itemName&lt;/code&gt; does not contain a single-quote character. If an attacker with the user name &lt;code&gt;wiley&lt;/code&gt; enters the string "&lt;code&gt;name' OR 'a'='a&lt;/code&gt;" for &lt;code&gt;itemName&lt;/code&gt;, then the query becomes the following:
+
+&lt;pre&gt;
+	SELECT * FROM items
+	WHERE owner = 'wiley'
+	AND itemname = 'name' OR 'a'='a';
+&lt;/pre&gt;
+
+The addition of the &lt;code&gt;OR 'a'='a'&lt;/code&gt; condition causes the where clause to always evaluate to true, so the query becomes logically equivalent to the much simpler query:
+
+&lt;pre&gt;
+	SELECT * FROM items;
+&lt;/pre&gt;
+
+This simplification of the query allows the attacker to bypass the requirement that the query must only return items owned by the authenticated user. The query now returns all entries stored in the &lt;code&gt;items&lt;/code&gt; table, regardless of their specified owner.
+
+&lt;b&gt;Example 2:&lt;/b&gt; This example examines the effects of a different malicious value passed to the query constructed and executed in &lt;code&gt;Example 1&lt;/code&gt;. If an attacker with the user name &lt;code&gt;wiley&lt;/code&gt; enters the string "&lt;code&gt;name'; DELETE FROM items; --&lt;/code&gt;" for &lt;code&gt;itemName&lt;/code&gt;, then the query becomes the following two queries:
+
+&lt;pre&gt;
+	SELECT * FROM items
+	WHERE owner = 'wiley'
+	AND itemname = 'name';
+
+	DELETE FROM items;
+
+	--'
+&lt;/pre&gt;
+
+Many database servers, including Microsoft(R) SQL Server 2000, allow multiple SQL statements separated by semicolons to be executed at once. While this attack string results in an error on Oracle and other database servers that do not allow the batch-execution of statements separated by semicolons, on databases that do allow batch execution, this type of attack allows the attacker to execute arbitrary commands against the database.
+
+Notice the trailing pair of hyphens (--), which specifies to most database servers that the remainder of the statement is to be treated as a comment and not executed [4]. In this case the comment character serves to remove the trailing single-quote left over from the modified query. On a database where comments are not allowed to be used in this way, the general attack could still be made effective using a trick similar to the one shown in &lt;code&gt;Example 1&lt;/code&gt;. If an attacker enters the string "&lt;code&gt;name'); DELETE FROM items; SELECT * FROM items WHERE 'a'='a&lt;/code&gt;", the following three valid statements will be created:
+
+&lt;pre&gt;
+	SELECT * FROM items
+	WHERE owner = 'wiley'
+	AND itemname = 'name';
+
+	DELETE FROM items;
+
+	SELECT * FROM items WHERE 'a'='a';
+&lt;/pre&gt;
+
+One traditional approach to preventing SQL injection attacks is to handle them as an input validation problem and either accept only characters from an allow list of safe values or identify and escape a list of potentially malicious values (deny list). Checking an allow list can be a very effective means of enforcing strict input validation rules, but parameterized SQL statements require less maintenance and can offer more guarantees with respect to security. As is almost always the case, implementing a deny list is riddled with loopholes that make it ineffective at preventing SQL injection attacks. For example, attackers may:
+
+- Target fields that are not quoted
+- Find ways to bypass the need for certain escaped metacharacters
+- Use stored procedures to hide the injected metacharacters
+
+Manually escaping characters in input to SQL queries can help, but it will not make your application secure from SQL injection attacks.
+
+Another solution commonly proposed for dealing with SQL injection attacks is to use stored procedures. Although stored procedures prevent some types of SQL injection attacks, they fail to protect against many others. Stored procedures typically help prevent SQL injection attacks by limiting the types of statements that can be passed to their parameters. However, there are many ways around the limitations and many interesting statements that can still be passed to stored procedures. Again, stored procedures can prevent some exploits, but they will not make your application secure against SQL injection attacks.&lt;/Content&gt;</Explanation>
+  <Recommendations>&lt;Content&gt;The root cause of a SQL injection vulnerability is the ability of an attacker to change context in the SQL query, causing a value that the programmer intended to be interpreted as data to be interpreted as a command instead. When a SQL query is constructed, the programmer knows what should be interpreted as part of the command and what should be interpreted as data. Parameterized SQL statements can enforce this behavior by disallowing data-directed context changes and preventing nearly all SQL injection attacks. Parameterized SQL statements are constructed using strings of regular SQL, but where user-supplied data needs to be included, they include bind parameters, which are placeholders for data that is subsequently inserted. In other words, bind parameters allow the programmer to explicitly specify to the database what should be treated as a command and what should be treated as data. When the program is ready to execute a statement, it specifies to the database the runtime values to use for each of the bind parameters without the risk that the data will be interpreted as a modification to the command.
+
+When connecting to MySQL, the previous example can be rewritten to use parameterized SQL statements (instead of concatenating user supplied strings) as follows:
+
+&lt;pre&gt;
+	...
+	$mysqli = new mysqli($host,$dbuser, $dbpass, $db);
+	$userName = $_SESSION['userName'];
+	$itemName = $_POST['itemName'];
+	$query = "SELECT * FROM items WHERE owner = ? AND itemname = ?";
+	$stmt = $mysqli-&amp;gt;prepare($query);
+	$stmt-&amp;gt;bind_param('ss',$username,$itemName);
+	$stmt-&amp;gt;execute();
+	...
+&lt;/pre&gt;
+
+The MySQL Improved extension (mysqli) is available for PHP5 users of MySQL. Code that relies on a different database should check for similar extensions.
+
+More complicated scenarios, often found in report generation code, require that user input affect the structure of the SQL statement, for instance by adding a dynamic constraint in the &lt;code&gt;WHERE&lt;/code&gt; clause. Do not use this requirement to justify concatenating user input to create a query string. Prevent SQL injection attacks where user input must affect command structure with a level of indirection: create a set of legitimate strings that correspond to different elements you might include in a SQL statement. When constructing a statement, use input from the user to select from this set of application-controlled values.&lt;/Content&gt;</Recommendations>
+  <Tips>
+    <Tip>A common mistake is to use parameterized SQL statements that are constructed by concatenating user-controlled strings. Of course, this defeats the purpose of using parameterized SQL statements. If you are not certain that the strings used to form parameterized statements are constants controlled by the application, do not assume that they are safe because they are not being executed directly as SQL strings. Thoroughly investigate all uses of user-controlled strings in SQL statements and verify that none can be used to modify the meaning of the query.</Tip>
+    <Tip>Due to the dynamic nature of PHP, you may see a large number of findings in PHP library files. Consider using a filter file to hide specific findings from view. For instructions on creating a filter file, see Advanced Options in the Fortify Static Code Analyzer User Guide.</Tip>
+  </Tips>
+  <References>
+    <Reference>
+      <Title>SQL Injection Attacks by Example</Title>
+      <Author>S. J. Friedl</Author>
+      <Source>http://www.unixwiz.net/techtips/sql-injection.html</Source>
+    </Reference>
+    <Reference>
+      <Title>Stop SQL Injection Attacks Before They Stop You</Title>
+      <Author>P. Litwin</Author>
+      <Publisher>MSDN Magazine</Publisher>
+      <PublishedDate>2004</PublishedDate>
+    </Reference>
+    <Reference>
+      <Title>SQL Injection and Oracle, Part One</Title>
+      <Author>P. Finnigan</Author>
+      <Publisher>Security Focus</Publisher>
+      <PublishedDate>2002</PublishedDate>
+      <Source>http://www.securityfocus.com/infocus/1644</Source>
+    </Reference>
+    <Reference>
+      <Title>Writing Secure Code, Second Edition</Title>
+      <Author>M. Howard, D. LeBlanc</Author>
+      <Publisher>Microsoft Press</Publisher>
+      <PublishedDate>2003</PublishedDate>
+    </Reference>
+    <Reference>
+      <Title>CWE ID 89</Title>
+      <Author>Standards Mapping - Common Weakness Enumeration</Author>
+    </Reference>
+    <Reference>
+      <Title>[6] CWE ID 089</Title>
+      <Author>Standards Mapping - Common Weakness Enumeration Top 25 2019</Author>
+    </Reference>
+    <Reference>
+      <Title>[6] CWE ID 089</Title>
+      <Author>Standards Mapping - Common Weakness Enumeration Top 25 2020</Author>
+    </Reference>
+    <Reference>
+      <Title>[6] CWE ID 089</Title>
+      <Author>Standards Mapping - Common Weakness Enumeration Top 25 2021</Author>
+    </Reference>
+    <Reference>
+      <Title>[3] CWE ID 089</Title>
+      <Author>Standards Mapping - Common Weakness Enumeration Top 25 2022</Author>
+    </Reference>
+    <Reference>
+      <Title>CCI-001310, CCI-002754</Title>
+      <Author>Standards Mapping - DISA Control Correlation Identifier Version 2</Author>
+    </Reference>
+    <Reference>
+      <Title>SI</Title>
+      <Author>Standards Mapping - FIPS200</Author>
+    </Reference>
+    <Reference>
+      <Title>Indirect Access to Sensitive Data</Title>
+      <Author>Standards Mapping - General Data Protection Regulation</Author>
+    </Reference>
+    <Reference>
+      <Title>Rule 1.3</Title>
+      <Author>Standards Mapping - MISRA C 2012</Author>
+    </Reference>
+    <Reference>
+      <Title>Rule 0-3-1</Title>
+      <Author>Standards Mapping - MISRA C++ 2008</Author>
+    </Reference>
+    <Reference>
+      <Title>SI-10 Information Input Validation (P1)</Title>
+      <Author>Standards Mapping - NIST Special Publication 800-53 Revision 4</Author>
+    </Reference>
+    <Reference>
+      <Title>SI-10 Information Input Validation</Title>
+      <Author>Standards Mapping - NIST Special Publication 800-53 Revision 5</Author>
+    </Reference>
+    <Reference>
+      <Title>5.3.4 Output Encoding and Injection Prevention Requirements (L1 L2 L3), 5.3.5 Output Encoding and Injection Prevention Requirements (L1 L2 L3)</Title>
+      <Author>Standards Mapping - OWASP Application Security Verification Standard 4.0</Author>
+    </Reference>
+    <Reference>
+      <Title>M7 Client Side Injection</Title>
+      <Author>Standards Mapping - OWASP Mobile Top 10 Risks 2014</Author>
+    </Reference>
+    <Reference>
+      <Title>A6 Injection Flaws</Title>
+      <Author>Standards Mapping - OWASP Top 10 2004</Author>
+    </Reference>
+    <Reference>
+      <Title>A2 Injection Flaws</Title>
+      <Author>Standards Mapping - OWASP Top 10 2007</Author>
+    </Reference>
+    <Reference>
+      <Title>A1 Injection</Title>
+      <Author>Standards Mapping - OWASP Top 10 2010</Author>
+    </Reference>
+    <Reference>
+      <Title>A1 Injection</Title>
+      <Author>Standards Mapping - OWASP Top 10 2013</Author>
+    </Reference>
+    <Reference>
+      <Title>A1 Injection</Title>
+      <Author>Standards Mapping - OWASP Top 10 2017</Author>
+    </Reference>
+    <Reference>
+      <Title>A03 Injection</Title>
+      <Author>Standards Mapping - OWASP Top 10 2021</Author>
+    </Reference>
+    <Reference>
+      <Title>Requirement 6.5.6</Title>
+      <Author>Standards Mapping - Payment Card Industry Data Security Standard Version 1.1</Author>
+    </Reference>
+    <Reference>
+      <Title>Requirement 6.3.1.1, Requirement 6.5.2</Title>
+      <Author>Standards Mapping - Payment Card Industry Data Security Standard Version 1.2</Author>
+    </Reference>
+    <Reference>
+      <Title>Requirement 6.5.1</Title>
+      <Author>Standards Mapping - Payment Card Industry Data Security Standard Version 2.0</Author>
+    </Reference>
+    <Reference>
+      <Title>Requirement 6.5.1</Title>
+      <Author>Standards Mapping - Payment Card Industry Data Security Standard Version 3.0</Author>
+    </Reference>
+    <Reference>
+      <Title>Requirement 6.5.1</Title>
+      <Author>Standards Mapping - Payment Card Industry Data Security Standard Version 3.1</Author>
+    </Reference>
+    <Reference>
+      <Title>Requirement 6.5.1</Title>
+      <Author>Standards Mapping - Payment Card Industry Data Security Standard Version 3.2</Author>
+    </Reference>
+    <Reference>
+      <Title>Requirement 6.5.1</Title>
+      <Author>Standards Mapping - Payment Card Industry Data Security Standard Version 3.2.1</Author>
+    </Reference>
+    <Reference>
+      <Title>Control Objective 4.2 - Critical Asset Protection</Title>
+      <Author>Standards Mapping - Payment Card Industry Software Security Framework 1.0</Author>
+    </Reference>
+    <Reference>
+      <Title>Control Objective 4.2 - Critical Asset Protection, Control Objective B.3.1 - Terminal Software Attack Mitigation, Control Objective B.3.1.1 - Terminal Software Attack Mitigation</Title>
+      <Author>Standards Mapping - Payment Card Industry Software Security Framework 1.1</Author>
+    </Reference>
+    <Reference>
+      <Title>Insecure Interaction - CWE ID 089</Title>
+      <Author>Standards Mapping - SANS Top 25 2009</Author>
+    </Reference>
+    <Reference>
+      <Title>Insecure Interaction - CWE ID 089</Title>
+      <Author>Standards Mapping - SANS Top 25 2010</Author>
+    </Reference>
+    <Reference>
+      <Title>Insecure Interaction - CWE ID 089</Title>
+      <Author>Standards Mapping - SANS Top 25 2011</Author>
+    </Reference>
+    <Reference>
+      <Title>APP3510 CAT I, APP3540.1 CAT I, APP3540.3 CAT II</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 3.1</Author>
+    </Reference>
+    <Reference>
+      <Title>APP3510 CAT I, APP3540.1 CAT I, APP3540.3 CAT II</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 3.10</Author>
+    </Reference>
+    <Reference>
+      <Title>APP3510 CAT I, APP3540.1 CAT I, APP3540.3 CAT II</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 3.4</Author>
+    </Reference>
+    <Reference>
+      <Title>APP3510 CAT I, APP3540.1 CAT I, APP3540.3 CAT II</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 3.5</Author>
+    </Reference>
+    <Reference>
+      <Title>APP3510 CAT I, APP3540.1 CAT I, APP3540.3 CAT II</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 3.6</Author>
+    </Reference>
+    <Reference>
+      <Title>APP3510 CAT I, APP3540.1 CAT I, APP3540.3 CAT II</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 3.7</Author>
+    </Reference>
+    <Reference>
+      <Title>APP3510 CAT I, APP3540.1 CAT I, APP3540.3 CAT II</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 3.9</Author>
+    </Reference>
+    <Reference>
+      <Title>APSC-DV-002540 CAT I, APSC-DV-002560 CAT I</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 4.1</Author>
+    </Reference>
+    <Reference>
+      <Title>APSC-DV-002540 CAT I, APSC-DV-002560 CAT I</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 4.10</Author>
+    </Reference>
+    <Reference>
+      <Title>APSC-DV-002540 CAT I, APSC-DV-002560 CAT I</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 4.11</Author>
+    </Reference>
+    <Reference>
+      <Title>APSC-DV-002540 CAT I, APSC-DV-002560 CAT I</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 4.2</Author>
+    </Reference>
+    <Reference>
+      <Title>APSC-DV-002540 CAT I, APSC-DV-002560 CAT I</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 4.3</Author>
+    </Reference>
+    <Reference>
+      <Title>APSC-DV-002540 CAT I, APSC-DV-002560 CAT I</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 4.4</Author>
+    </Reference>
+    <Reference>
+      <Title>APSC-DV-002540 CAT I, APSC-DV-002560 CAT I</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 4.5</Author>
+    </Reference>
+    <Reference>
+      <Title>APSC-DV-002540 CAT I, APSC-DV-002560 CAT I</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 4.6</Author>
+    </Reference>
+    <Reference>
+      <Title>APSC-DV-002540 CAT I, APSC-DV-002560 CAT I</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 4.7</Author>
+    </Reference>
+    <Reference>
+      <Title>APSC-DV-002540 CAT I, APSC-DV-002560 CAT I</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 4.8</Author>
+    </Reference>
+    <Reference>
+      <Title>APSC-DV-002540 CAT I, APSC-DV-002560 CAT I</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 4.9</Author>
+    </Reference>
+    <Reference>
+      <Title>APSC-DV-002540 CAT I, APSC-DV-002560 CAT I</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 5.1</Author>
+    </Reference>
+    <Reference>
+      <Title>SQL Injection</Title>
+      <Author>Standards Mapping - Web Application Security Consortium 24 + 2</Author>
+    </Reference>
+    <Reference>
+      <Title>SQL Injection (WASC-19)</Title>
+      <Author>Standards Mapping - Web Application Security Consortium Version 2.00</Author>
+    </Reference>
+  </References>
+</Description>
+<Description contentType="preformatted" classID="375B7CCC-5920-4230-AE53-A7B264045525">
+  <Abstract>&lt;Content&gt;The Dockerfile does not specify a USER, so it defaults to running with a root user.&lt;/Content&gt;</Abstract>
+  <Explanation>&lt;Content&gt;When a &lt;code&gt;Dockerfile&lt;/code&gt; does not specify a &lt;code&gt;USER&lt;/code&gt;, Docker containers run with super user privileges by default. These super user privileges are propagated to the code running inside the container, which is usually more permission than necessary. Running the Docker container with super user privileges broadens the attack surface which might enable attackers to perform more serious forms of exploitation.&lt;/Content&gt;</Explanation>
+  <Recommendations>&lt;Content&gt;It is good practice to run your containers as a non-root user when possible.
+
+To modify a docker container to use a non-root user, the Dockerfile needs to specify a different user, such as:
+&lt;pre&gt;
+RUN useradd myLowPrivilegeUser
+USER myLowPrivilegeUser
+&lt;/pre&gt;
+    &lt;/Content&gt;</Recommendations>
+  <References>
+    <Reference>
+      <Title>Docker USER instruction</Title>
+      <Source>https://docs.docker.com/engine/reference/builder/#user</Source>
+    </Reference>
+    <Reference>
+      <Title>CWE ID 20</Title>
+      <Author>Standards Mapping - Common Weakness Enumeration</Author>
+    </Reference>
+    <Reference>
+      <Title>[3] CWE ID 020</Title>
+      <Author>Standards Mapping - Common Weakness Enumeration Top 25 2019</Author>
+    </Reference>
+    <Reference>
+      <Title>[3] CWE ID 020</Title>
+      <Author>Standards Mapping - Common Weakness Enumeration Top 25 2020</Author>
+    </Reference>
+    <Reference>
+      <Title>[4] CWE ID 020</Title>
+      <Author>Standards Mapping - Common Weakness Enumeration Top 25 2021</Author>
+    </Reference>
+    <Reference>
+      <Title>[4] CWE ID 020</Title>
+      <Author>Standards Mapping - Common Weakness Enumeration Top 25 2022</Author>
+    </Reference>
+    <Reference>
+      <Title>CM</Title>
+      <Author>Standards Mapping - FIPS200</Author>
+    </Reference>
+    <Reference>
+      <Title>Indirect Access to Sensitive Data</Title>
+      <Author>Standards Mapping - General Data Protection Regulation</Author>
+    </Reference>
+    <Reference>
+      <Title>5.1.3 Input Validation Requirements (L1 L2 L3), 5.1.4 Input Validation Requirements (L1 L2 L3)</Title>
+      <Author>Standards Mapping - OWASP Application Security Verification Standard 4.0</Author>
+    </Reference>
+    <Reference>
+      <Title>M1 Weak Server Side Controls</Title>
+      <Author>Standards Mapping - OWASP Mobile Top 10 Risks 2014</Author>
+    </Reference>
+    <Reference>
+      <Title>A10 Insecure Configuration Management</Title>
+      <Author>Standards Mapping - OWASP Top 10 2004</Author>
+    </Reference>
+    <Reference>
+      <Title>A6 Security Misconfiguration</Title>
+      <Author>Standards Mapping - OWASP Top 10 2010</Author>
+    </Reference>
+    <Reference>
+      <Title>A5 Security Misconfiguration</Title>
+      <Author>Standards Mapping - OWASP Top 10 2013</Author>
+    </Reference>
+    <Reference>
+      <Title>A6 Security Misconfiguration</Title>
+      <Author>Standards Mapping - OWASP Top 10 2017</Author>
+    </Reference>
+    <Reference>
+      <Title>A05 Security Misconfiguration</Title>
+      <Author>Standards Mapping - OWASP Top 10 2021</Author>
+    </Reference>
+    <Reference>
+      <Title>Requirement 6.5.10</Title>
+      <Author>Standards Mapping - Payment Card Industry Data Security Standard Version 1.1</Author>
+    </Reference>
+    <Reference>
+      <Title>Requirement 6.5.6</Title>
+      <Author>Standards Mapping - Payment Card Industry Data Security Standard Version 3.0</Author>
+    </Reference>
+    <Reference>
+      <Title>Requirement 6.5.6</Title>
+      <Author>Standards Mapping - Payment Card Industry Data Security Standard Version 3.1</Author>
+    </Reference>
+    <Reference>
+      <Title>Requirement 6.5.6</Title>
+      <Author>Standards Mapping - Payment Card Industry Data Security Standard Version 3.2</Author>
+    </Reference>
+    <Reference>
+      <Title>Requirement 6.5.6</Title>
+      <Author>Standards Mapping - Payment Card Industry Data Security Standard Version 3.2.1</Author>
+    </Reference>
+    <Reference>
+      <Title>Control Objective 4.2 - Critical Asset Protection</Title>
+      <Author>Standards Mapping - Payment Card Industry Software Security Framework 1.0</Author>
+    </Reference>
+    <Reference>
+      <Title>Control Objective 4.2 - Critical Asset Protection</Title>
+      <Author>Standards Mapping - Payment Card Industry Software Security Framework 1.1</Author>
+    </Reference>
+    <Reference>
+      <Title>Insecure Interaction - CWE ID 020</Title>
+      <Author>Standards Mapping - SANS Top 25 2009</Author>
+    </Reference>
+    <Reference>
+      <Title>Application Misconfiguration (WASC-15)</Title>
+      <Author>Standards Mapping - Web Application Security Consortium Version 2.00</Author>
+    </Reference>
+  </References>
+</Description>
+<Description contentType="preformatted" classID="10AB223B-7AA6-464A-A036-4616C822C299">
+  <Abstract>&lt;Content&gt;Retrieving build dependencies using a non-specific version can leave the build system vulnerable to malicious binaries or cause the system to experience unexpected behavior.&lt;/Content&gt;</Abstract>
+  <Explanation>&lt;Content&gt;Dockerfiles can specify an unbound range of versions for dependencies and base images. If an attacker is able to add malicious versions of dependencies to a repository or trick the build system into downloading dependencies from a repository under the attacker's control, if docker is configured without specific versions of dependencies, then docker will silently download and run the compromised dependency.
+
+This type of weakness would be exploitable as a result of a supply chain attack where attackers can leverage misconfiguration by developers, typosquatting and can add malicious packages to open source repositories. An attack of this type exploits the trust in the published packages to gain access and exfiltrate data.
+
+In docker, the &lt;code&gt;latest&lt;/code&gt; tag automatically indicates the version level of an image that doesn't use a digest or unique tag to provide a version for it. Docker automatically assigns the &lt;code&gt;latest&lt;/code&gt; tag as mechanism to point to the most recent image manifest file. Because tags are mutable, an attacker can replace an image or layer using a &lt;code&gt;latest&lt;/code&gt; (or weak tags such as &lt;code&gt;imagename-lst, imagename-last, myimage&lt;/code&gt;).
+
+&lt;b&gt;Example 1:&lt;/b&gt; The following configuration instructs Docker to pick the base image using the latest version of &lt;code&gt;ubuntu&lt;/code&gt;.
+&lt;pre&gt;
+    FROM ubuntu:Latest
+    ...
+&lt;/pre&gt;
+
+Docker does not validate whether the repository configured to support the package manager is trustworthy.
+
+&lt;b&gt;Example 2:&lt;/b&gt; The following configuration instructs the package manager &lt;code&gt;zypper&lt;/code&gt; to retrive the latest version of the given package.
+&lt;pre&gt;
+...
+zypper install package
+...
+&lt;/pre&gt;
+In &lt;code&gt;Example 2&lt;/code&gt;, if the repository is compromised, an attacker could simply upload a version that meets the dynamic criteria and cause &lt;code&gt;zypper&lt;/code&gt; to download a malicious version of the dependency.&lt;/Content&gt;</Explanation>
+  <Recommendations>&lt;Content&gt;Perform version pinning or simple pinning. Version pinning explicitly specifies the version of images, libraries and support packages an application or system depends on. The primary goal of pinning is to ensure system stability to achieve repeatable deployments. Pinning ensures that end-users, developers, and testers all use the same code base. Pinning can additionally ensure the use of safe dependencies; those which have gone through the rigorous process of application security validation and malware detection.
+
+When you invoke zypper (or other package managers) from docker, use the following formats:
+    &lt;pre&gt;
+    RUN zypper install &amp;lt;package_name&amp;gt;=&amp;lt;version&amp;gt; \
+    RUN gem install &amp;lt;package_name&amp;gt; --version &amp;lt;version&amp;gt;
+    RUN gem install &amp;lt;package_name&amp;gt; -v &amp;lt;version&amp;gt;
+    RUN apk add &amp;lt;package_name&amp;gt;=&amp;lt;version&amp;gt;
+    RUN apt-get update &amp;amp;&amp;amp; apt-get install -y  \
+      &amp;lt;package_name&amp;gt;=&amp;lt;version&amp;gt;  \
+      &amp;lt;package_name&amp;gt;=&amp;lt;version&amp;gt; \
+      &amp;lt;package_name&amp;gt;=&amp;lt;version&amp;gt; \
+      &amp;amp;&amp;amp; rm -rf /var/lib/apt/lists/*
+    &lt;/pre&gt;
+Where &lt;code&gt;&amp;lt;package_name&amp;gt;&lt;/code&gt; is the name of the dependency to install and &lt;code&gt;&amp;lt;version&amp;gt;&lt;/code&gt; is the exact version or release the application should use.
+
+Fortify also recommends:
+- Ensure the repositories that the package managers use are trustworthy or that they are properly kept, and there is no install package substitution possible, including the addition of malicious code onto the package.
+- Avoid using public or untrusted repositories.
+- Scan packages for malware and security vulnerabilities prior to executing any regression tests.
+- Use digitally signed images.
+- Avoid using image tags such as &lt;code&gt;latest&lt;/code&gt; or weak tags such as&lt;code&gt;imagename-lst, imagename-last, myimage&lt;/code&gt; for deployments in production environments.
+- Stick to more stable tags, like specific version tags, although there is no guarantee that these cannot mutate either.
+- Do not create mutant tags.
+- Implement strict control over the source of images and their layers.&lt;/Content&gt;</Recommendations>
+  <References>
+    <Reference>
+      <Title>Best practices for writing Dockerfile</Title>
+      <Source>https://docs.docker.com/develop/develop-images/dockerfile_best-practices</Source>
+    </Reference>
+    <Reference>
+      <Title>CWE ID 20</Title>
+      <Author>Standards Mapping - Common Weakness Enumeration</Author>
+    </Reference>
+    <Reference>
+      <Title>[3] CWE ID 020</Title>
+      <Author>Standards Mapping - Common Weakness Enumeration Top 25 2019</Author>
+    </Reference>
+    <Reference>
+      <Title>[3] CWE ID 020</Title>
+      <Author>Standards Mapping - Common Weakness Enumeration Top 25 2020</Author>
+    </Reference>
+    <Reference>
+      <Title>[4] CWE ID 020</Title>
+      <Author>Standards Mapping - Common Weakness Enumeration Top 25 2021</Author>
+    </Reference>
+    <Reference>
+      <Title>[4] CWE ID 020</Title>
+      <Author>Standards Mapping - Common Weakness Enumeration Top 25 2022</Author>
+    </Reference>
+    <Reference>
+      <Title>CM</Title>
+      <Author>Standards Mapping - FIPS200</Author>
+    </Reference>
+    <Reference>
+      <Title>Indirect Access to Sensitive Data</Title>
+      <Author>Standards Mapping - General Data Protection Regulation</Author>
+    </Reference>
+    <Reference>
+      <Title>5.1.3 Input Validation Requirements (L1 L2 L3), 5.1.4 Input Validation Requirements (L1 L2 L3)</Title>
+      <Author>Standards Mapping - OWASP Application Security Verification Standard 4.0</Author>
+    </Reference>
+    <Reference>
+      <Title>M1 Weak Server Side Controls</Title>
+      <Author>Standards Mapping - OWASP Mobile Top 10 Risks 2014</Author>
+    </Reference>
+    <Reference>
+      <Title>A10 Insecure Configuration Management</Title>
+      <Author>Standards Mapping - OWASP Top 10 2004</Author>
+    </Reference>
+    <Reference>
+      <Title>A6 Security Misconfiguration</Title>
+      <Author>Standards Mapping - OWASP Top 10 2010</Author>
+    </Reference>
+    <Reference>
+      <Title>A5 Security Misconfiguration</Title>
+      <Author>Standards Mapping - OWASP Top 10 2013</Author>
+    </Reference>
+    <Reference>
+      <Title>A6 Security Misconfiguration</Title>
+      <Author>Standards Mapping - OWASP Top 10 2017</Author>
+    </Reference>
+    <Reference>
+      <Title>A05 Security Misconfiguration</Title>
+      <Author>Standards Mapping - OWASP Top 10 2021</Author>
+    </Reference>
+    <Reference>
+      <Title>Requirement 6.5.10</Title>
+      <Author>Standards Mapping - Payment Card Industry Data Security Standard Version 1.1</Author>
+    </Reference>
+    <Reference>
+      <Title>Requirement 6.5.6</Title>
+      <Author>Standards Mapping - Payment Card Industry Data Security Standard Version 3.0</Author>
+    </Reference>
+    <Reference>
+      <Title>Requirement 6.5.6</Title>
+      <Author>Standards Mapping - Payment Card Industry Data Security Standard Version 3.1</Author>
+    </Reference>
+    <Reference>
+      <Title>Requirement 6.5.6</Title>
+      <Author>Standards Mapping - Payment Card Industry Data Security Standard Version 3.2</Author>
+    </Reference>
+    <Reference>
+      <Title>Requirement 6.5.6</Title>
+      <Author>Standards Mapping - Payment Card Industry Data Security Standard Version 3.2.1</Author>
+    </Reference>
+    <Reference>
+      <Title>Control Objective 4.2 - Critical Asset Protection</Title>
+      <Author>Standards Mapping - Payment Card Industry Software Security Framework 1.0</Author>
+    </Reference>
+    <Reference>
+      <Title>Control Objective 4.2 - Critical Asset Protection</Title>
+      <Author>Standards Mapping - Payment Card Industry Software Security Framework 1.1</Author>
+    </Reference>
+    <Reference>
+      <Title>Insecure Interaction - CWE ID 020</Title>
+      <Author>Standards Mapping - SANS Top 25 2009</Author>
+    </Reference>
+    <Reference>
+      <Title>Application Misconfiguration (WASC-15)</Title>
+      <Author>Standards Mapping - Web Application Security Consortium Version 2.00</Author>
+    </Reference>
+  </References>
+</Description>
+<Description contentType="preformatted" classID="6DBD0F5A-99EB-53B7-AB1E-D9B012E68020">
+  <Abstract>&lt;Content&gt;Hardcoded encryption keys can compromise security in a way that is not easy to remedy.&lt;/Content&gt;</Abstract>
+  <Explanation>&lt;Content&gt;Never hardcode an encryption key because it makes the encryption key visible to all of the project's developers, and makes fixing the problem extremely difficult. Changing the encryption key after the code is in production requires a software patch. If the account that the encryption key protects is compromised, the organization must choose between security and system availability.
+
+&lt;Paragraph&gt;
+In this case, an encryption key is located in &lt;Replace key="PrimaryLocation.file"/&gt; on line &lt;Replace key="PrimaryLocation.line"/&gt;.
+&lt;/Paragraph&gt;
+&lt;b&gt;Example 1:&lt;/b&gt; The following example shows an encryption key inside a .pem file:
+
+&lt;pre&gt;
+...
+-----BEGIN RSA PRIVATE KEY-----
+MIICXwIBAAKBgQCtVacMo+w+TFOm0p8MlBWvwXtVRpF28V+o0RNPx5x/1TJTlKEl
+...
+DiJPJY2LNBQ7jS685mb6650JdvH8uQl6oeJ/aUmq63o2zOw=
+-----END RSA PRIVATE KEY-----
+...
+&lt;/pre&gt;
+
+Anyone with access to the code can see the encryption key. After the application has shipped, there is no way to change the encryption key unless the program is patched. An employee with access to this information can use it to break into the system. Any attacker with access to the application executable can extract the encryption key value.&lt;/Content&gt;</Explanation>
+  <Recommendations>&lt;Content&gt;Never check in encryption keys to your source control system, and never hardcode them. Always obfuscate and manage encryption keys in an external source. Storing encryption keys in plain text anywhere on the system enables anyone with sufficient permissions to read and potentially misuse the encryption key.&lt;/Content&gt;</Recommendations>
+  <References>
+    <Reference>
+      <Title>CWE ID 321</Title>
+      <Author>Standards Mapping - Common Weakness Enumeration</Author>
+    </Reference>
+    <Reference>
+      <Title>[13] CWE ID 287, [19] CWE ID 798</Title>
+      <Author>Standards Mapping - Common Weakness Enumeration Top 25 2019</Author>
+    </Reference>
+    <Reference>
+      <Title>[14] CWE ID 287, [20] CWE ID 798</Title>
+      <Author>Standards Mapping - Common Weakness Enumeration Top 25 2020</Author>
+    </Reference>
+    <Reference>
+      <Title>[14] CWE ID 287, [16] CWE ID 798</Title>
+      <Author>Standards Mapping - Common Weakness Enumeration Top 25 2021</Author>
+    </Reference>
+    <Reference>
+      <Title>[14] CWE ID 287, [15] CWE ID 798</Title>
+      <Author>Standards Mapping - Common Weakness Enumeration Top 25 2022</Author>
+    </Reference>
+    <Reference>
+      <Title>CCI-002450</Title>
+      <Author>Standards Mapping - DISA Control Correlation Identifier Version 2</Author>
+    </Reference>
+    <Reference>
+      <Title>IA</Title>
+      <Author>Standards Mapping - FIPS200</Author>
+    </Reference>
+    <Reference>
+      <Title>Insufficient Data Protection</Title>
+      <Author>Standards Mapping - General Data Protection Regulation</Author>
+    </Reference>
+    <Reference>
+      <Title>SC-12 Cryptographic Key Establishment and Management (P1)</Title>
+      <Author>Standards Mapping - NIST Special Publication 800-53 Revision 4</Author>
+    </Reference>
+    <Reference>
+      <Title>SC-12 Cryptographic Key Establishment and Management</Title>
+      <Author>Standards Mapping - NIST Special Publication 800-53 Revision 5</Author>
+    </Reference>
+    <Reference>
+      <Title>2.6.3 Look-up Secret Verifier Requirements (L2 L3), 2.7.1 Out of Band Verifier Requirements (L1 L2 L3), 2.7.2 Out of Band Verifier Requirements (L1 L2 L3), 2.7.3 Out of Band Verifier Requirements (L1 L2 L3), 2.8.4 Single or Multi Factor One Time Verifier Requirements (L2 L3), 2.8.5 Single or Multi Factor One Time Verifier Requirements (L2 L3), 2.9.1 Cryptographic Software and Devices Verifier Requirements (L2 L3), 2.10.2 Service Authentication Requirements (L2 L3), 2.10.4 Service Authentication Requirements (L2 L3), 3.5.2 Token-based Session Management (L2 L3), 3.7.1 Defenses Against Session Management Exploits (L1 L2 L3), 6.2.1 Algorithms (L1 L2 L3), 6.4.1 Secret Management (L2 L3), 6.4.2 Secret Management (L2 L3), 9.2.3 Server Communications Security Requirements (L2 L3), 10.2.3 Malicious Code Search (L3)</Title>
+      <Author>Standards Mapping - OWASP Application Security Verification Standard 4.0</Author>
+    </Reference>
+    <Reference>
+      <Title>M6 Broken Cryptography</Title>
+      <Author>Standards Mapping - OWASP Mobile Top 10 Risks 2014</Author>
+    </Reference>
+    <Reference>
+      <Title>A8 Insecure Storage</Title>
+      <Author>Standards Mapping - OWASP Top 10 2004</Author>
+    </Reference>
+    <Reference>
+      <Title>A8 Insecure Cryptographic Storage</Title>
+      <Author>Standards Mapping - OWASP Top 10 2007</Author>
+    </Reference>
+    <Reference>
+      <Title>A7 Insecure Cryptographic Storage</Title>
+      <Author>Standards Mapping - OWASP Top 10 2010</Author>
+    </Reference>
+    <Reference>
+      <Title>A6 Sensitive Data Exposure</Title>
+      <Author>Standards Mapping - OWASP Top 10 2013</Author>
+    </Reference>
+    <Reference>
+      <Title>A3 Sensitive Data Exposure</Title>
+      <Author>Standards Mapping - OWASP Top 10 2017</Author>
+    </Reference>
+    <Reference>
+      <Title>A02 Cryptographic Failures</Title>
+      <Author>Standards Mapping - OWASP Top 10 2021</Author>
+    </Reference>
+    <Reference>
+      <Title>Requirement 6.5.8, Requirement 8.4</Title>
+      <Author>Standards Mapping - Payment Card Industry Data Security Standard Version 1.1</Author>
+    </Reference>
+    <Reference>
+      <Title>Requirement 6.3.1.3, Requirement 6.5.8, Requirement 8.4</Title>
+      <Author>Standards Mapping - Payment Card Industry Data Security Standard Version 1.2</Author>
+    </Reference>
+    <Reference>
+      <Title>Requirement 6.3.1, Requirement 6.5.3, Requirement 8.4</Title>
+      <Author>Standards Mapping - Payment Card Industry Data Security Standard Version 2.0</Author>
+    </Reference>
+    <Reference>
+      <Title>Requirement 6.3.1, Requirement 6.5.3, Requirement 8.2.1</Title>
+      <Author>Standards Mapping - Payment Card Industry Data Security Standard Version 3.0</Author>
+    </Reference>
+    <Reference>
+      <Title>Requirement 6.3.1, Requirement 6.5.3, Requirement 8.2.1</Title>
+      <Author>Standards Mapping - Payment Card Industry Data Security Standard Version 3.1</Author>
+    </Reference>
+    <Reference>
+      <Title>Requirement 6.3.1, Requirement 6.5.3, Requirement 8.2.1</Title>
+      <Author>Standards Mapping - Payment Card Industry Data Security Standard Version 3.2</Author>
+    </Reference>
+    <Reference>
+      <Title>Requirement 6.3.1, Requirement 6.5.3, Requirement 8.2.1</Title>
+      <Author>Standards Mapping - Payment Card Industry Data Security Standard Version 3.2.1</Author>
+    </Reference>
+    <Reference>
+      <Title>Control Objective 7.2 - Use of Cryptography</Title>
+      <Author>Standards Mapping - Payment Card Industry Software Security Framework 1.0</Author>
+    </Reference>
+    <Reference>
+      <Title>Control Objective 7.2 - Use of Cryptography, Control Objective B.2.3 - Terminal Software Design</Title>
+      <Author>Standards Mapping - Payment Card Industry Software Security Framework 1.1</Author>
+    </Reference>
+    <Reference>
+      <Title>Porous Defenses - CWE ID 259</Title>
+      <Author>Standards Mapping - SANS Top 25 2009</Author>
+    </Reference>
+    <Reference>
+      <Title>Porous Defenses - CWE ID 798</Title>
+      <Author>Standards Mapping - SANS Top 25 2010</Author>
+    </Reference>
+    <Reference>
+      <Title>Porous Defenses - CWE ID 798</Title>
+      <Author>Standards Mapping - SANS Top 25 2011</Author>
+    </Reference>
+    <Reference>
+      <Title>APP3210.1 CAT II, APP3350 CAT I</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 3.1</Author>
+    </Reference>
+    <Reference>
+      <Title>APP3210.1 CAT II, APP3350 CAT I</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 3.10</Author>
+    </Reference>
+    <Reference>
+      <Title>APP3210.1 CAT II, APP3350 CAT I</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 3.4</Author>
+    </Reference>
+    <Reference>
+      <Title>APP3210.1 CAT II, APP3350 CAT I</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 3.5</Author>
+    </Reference>
+    <Reference>
+      <Title>APP3210.1 CAT II, APP3350 CAT I</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 3.6</Author>
+    </Reference>
+    <Reference>
+      <Title>APP3210.1 CAT II, APP3350 CAT I</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 3.7</Author>
+    </Reference>
+    <Reference>
+      <Title>APP3210.1 CAT II, APP3350 CAT I</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 3.9</Author>
+    </Reference>
+    <Reference>
+      <Title>APSC-DV-002010 CAT II</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 4.1</Author>
+    </Reference>
+    <Reference>
+      <Title>APSC-DV-002010 CAT II</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 4.10</Author>
+    </Reference>
+    <Reference>
+      <Title>APSC-DV-002010 CAT II</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 4.11</Author>
+    </Reference>
+    <Reference>
+      <Title>APSC-DV-002010 CAT II</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 4.2</Author>
+    </Reference>
+    <Reference>
+      <Title>APSC-DV-002010 CAT II</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 4.3</Author>
+    </Reference>
+    <Reference>
+      <Title>APSC-DV-002010 CAT II</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 4.4</Author>
+    </Reference>
+    <Reference>
+      <Title>APSC-DV-002010 CAT II</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 4.5</Author>
+    </Reference>
+    <Reference>
+      <Title>APSC-DV-002010 CAT II</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 4.6</Author>
+    </Reference>
+    <Reference>
+      <Title>APSC-DV-002010 CAT II</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 4.7</Author>
+    </Reference>
+    <Reference>
+      <Title>APSC-DV-002010 CAT II</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 4.8</Author>
+    </Reference>
+    <Reference>
+      <Title>APSC-DV-002010 CAT II</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 4.9</Author>
+    </Reference>
+    <Reference>
+      <Title>APSC-DV-002010 CAT II</Title>
+      <Author>Standards Mapping - Security Technical Implementation Guide Version 5.1</Author>
+    </Reference>
+    <Reference>
+      <Title>Information Leakage (WASC-13)</Title>
+      <Author>Standards Mapping - Web Application Security Consortium Version 2.00</Author>
+    </Reference>
+  </References>
+</Description>
+<Snippets>
+  <Snippet id="C403F8FA74F0FD9B1B7D404F444D62AD#Dockerfile:1:1">
+    <File>Dockerfile</File>
+    <StartLine>1</StartLine>
+    <EndLine>4</EndLine>
+    <Text><![CDATA[FROM php:7.3-apache 
+RUN docker-php-ext-install mysqli
+RUN apt-get update \
+    && apt-get install -y libzip-dev \
+]]></Text>
+  </Snippet>
+  <Snippet id="753FBACAD3E93FBD834982031A4B8C9F#Dockerfile:3:3">
+    <File>Dockerfile</File>
+    <StartLine>1</StartLine>
+    <EndLine>6</EndLine>
+    <Text><![CDATA[FROM php:7.3-apache 
+RUN docker-php-ext-install mysqli
+RUN apt-get update \
+    && apt-get install -y libzip-dev \
+    && apt-get install -y zlib1g-dev \
+    && rm -rf /var/lib/apt/lists/* \
+]]></Text>
+  </Snippet>
+  <Snippet id="8BE02D3C7AB3CF229920B65905ABD185#certs4test/server.key:1:1">
+    <File>certs4test/server.key</File>
+    <StartLine>1</StartLine>
+    <EndLine>4</EndLine>
+    <Text><![CDATA[-----BEGIN PRIVATE KEY-----
+MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDVVvkn4gD5hq16
+tv/+gNTLxz3oaWjoyHn9hsyEpZzHm7NAM2gy6F6hUCn2IQMA3iAjKM/kdTsdY7z7
+dmvIuFvvTof4ZPsLro7IJtQgY8/lg5to5njfFbfFAYtnZDPE3qWiE/hOFtXdozkd
+]]></Text>
+  </Snippet>
+  <Snippet id="5A8E6EACC1685EE4F03B373B5F01406F#source/index.php:23:23">
+    <File>source/index.php</File>
+    <StartLine>20</StartLine>
+    <EndLine>26</EndLine>
+    <Text><![CDATA[        echo "Failed to connect to Mysql: " . mysqli_connect_error();
+      }
+
+      $id = $_GET['id'];
+
+      if($id == "") {
+        echo '<img src="Hint: Location: index.php?id=1">';
+]]></Text>
+  </Snippet>
+  <Snippet id="CE35634DA544FF17FF6A4261164333E0#source/index.php:30:30">
+    <File>source/index.php</File>
+    <StartLine>27</StartLine>
+    <EndLine>33</EndLine>
+    <Text><![CDATA[        exit;
+      }
+
+      $query = "SELECT name FROM user WHERE id=$id";
+
+      $result = mysqli_query($con, $query);
+
+]]></Text>
+  </Snippet>
+  <Snippet id="DE19806B0882A74485FAAAFA8760E9D3#source/index.php:32:32">
+    <File>source/index.php</File>
+    <StartLine>29</StartLine>
+    <EndLine>35</EndLine>
+    <Text><![CDATA[
+      $query = "SELECT name FROM user WHERE id=$id";
+
+      $result = mysqli_query($con, $query);
+
+      while ($row = $result->fetch_assoc()) {
+        echo $row['name']."<br>";
+]]></Text>
+  </Snippet>
+</Snippets>
+<ProgramData>
+  <Sources>
+    <SourceInstance ruleID="733A7EB0-BE30-4C7F-A067-13851F5327410">
+      <SourceLocation path="source/index.php" line="11" lineEnd="11" colStart="27" colEnd="0"/>
+      <TaintFlags>
+        <TaintFlag name="XSS"/>
+        <TaintFlag name="WEB"/>
+      </TaintFlags>
+    </SourceInstance>
+    <SourceInstance ruleID="37AEC4ED-1B97-489B-BFA9-914DDA4DE5F4">
+      <FunctionCall>
+        <SourceLocation path="source/index.php" line="32" lineEnd="32" colStart="17" colEnd="0"/>
+        <Function name="mysqli_query"/>
+      </FunctionCall>
+      <TaintFlags>
+        <TaintFlag name="XSS"/>
+        <TaintFlag name="DATABASE"/>
+      </TaintFlags>
+    </SourceInstance>
+    <SourceInstance ruleID="FEA6DB27-D630-488F-9762-9534543C4DD90">
+      <SourceLocation path="source/index.php" line="23" lineEnd="23" colStart="13" colEnd="0"/>
+      <TaintFlags>
+        <TaintFlag name="XSS"/>
+        <TaintFlag name="WEB"/>
+      </TaintFlags>
+    </SourceInstance>
+  </Sources>
+  <Sinks>
+    <SinkInstance ruleID="35EE2631-51F2-4696-9594-ECDEC9B56244">
+      <FunctionCall>
+        <SourceLocation path="source/index.php" line="35" lineEnd="35" colStart="26" colEnd="0"/>
+        <Function name="builtin_echo"/>
+      </FunctionCall>
+    </SinkInstance>
+    <SinkInstance ruleID="64392070-1C79-4CC8-B8D9-F3EC8A83341C">
+      <FunctionCall>
+        <SourceLocation path="source/index.php" line="35" lineEnd="35" colStart="26" colEnd="0"/>
+        <Function name="builtin_echo"/>
+      </FunctionCall>
+    </SinkInstance>
+    <SinkInstance ruleID="AF6C6C57-CA46-489C-B449-CFE4A5AB7202">
+      <FunctionCall>
+        <SourceLocation path="source/index.php" line="35" lineEnd="35" colStart="26" colEnd="0"/>
+        <Function name="builtin_echo"/>
+      </FunctionCall>
+    </SinkInstance>
+    <SinkInstance ruleID="C5624965-3160-4822-AC22-405F9A741ED8">
+      <FunctionCall>
+        <SourceLocation path="source/index.php" line="35" lineEnd="35" colStart="26" colEnd="0"/>
+        <Function name="builtin_echo"/>
+      </FunctionCall>
+    </SinkInstance>
+    <SinkInstance ruleID="F9CB8F3E-C813-44CF-AF70-9BFA6609105D">
+      <FunctionCall>
+        <SourceLocation path="source/index.php" line="35" lineEnd="35" colStart="26" colEnd="0"/>
+        <Function name="builtin_echo"/>
+      </FunctionCall>
+    </SinkInstance>
+    <SinkInstance ruleID="35EE2631-51F2-4696-9594-ECDEC9B56244">
+      <FunctionCall>
+        <SourceLocation path="source/index.php" line="20" lineEnd="20" colStart="14" colEnd="0"/>
+        <Function name="builtin_echo"/>
+      </FunctionCall>
+    </SinkInstance>
+    <SinkInstance ruleID="64392070-1C79-4CC8-B8D9-F3EC8A83341C">
+      <FunctionCall>
+        <SourceLocation path="source/index.php" line="20" lineEnd="20" colStart="14" colEnd="0"/>
+        <Function name="builtin_echo"/>
+      </FunctionCall>
+    </SinkInstance>
+    <SinkInstance ruleID="AF6C6C57-CA46-489C-B449-CFE4A5AB7202">
+      <FunctionCall>
+        <SourceLocation path="source/index.php" line="20" lineEnd="20" colStart="14" colEnd="0"/>
+        <Function name="builtin_echo"/>
+      </FunctionCall>
+    </SinkInstance>
+    <SinkInstance ruleID="C5624965-3160-4822-AC22-405F9A741ED8">
+      <FunctionCall>
+        <SourceLocation path="source/index.php" line="20" lineEnd="20" colStart="14" colEnd="0"/>
+        <Function name="builtin_echo"/>
+      </FunctionCall>
+    </SinkInstance>
+    <SinkInstance ruleID="F9CB8F3E-C813-44CF-AF70-9BFA6609105D">
+      <FunctionCall>
+        <SourceLocation path="source/index.php" line="20" lineEnd="20" colStart="14" colEnd="0"/>
+        <Function name="builtin_echo"/>
+      </FunctionCall>
+    </SinkInstance>
+    <SinkInstance ruleID="35EE2631-51F2-4696-9594-ECDEC9B56244">
+      <FunctionCall>
+        <SourceLocation path="source/index.php" line="35" lineEnd="35" colStart="27" colEnd="0"/>
+        <Function name="builtin_echo"/>
+      </FunctionCall>
+    </SinkInstance>
+    <SinkInstance ruleID="64392070-1C79-4CC8-B8D9-F3EC8A83341C">
+      <FunctionCall>
+        <SourceLocation path="source/index.php" line="35" lineEnd="35" colStart="27" colEnd="0"/>
+        <Function name="builtin_echo"/>
+      </FunctionCall>
+    </SinkInstance>
+    <SinkInstance ruleID="AF6C6C57-CA46-489C-B449-CFE4A5AB7202">
+      <FunctionCall>
+        <SourceLocation path="source/index.php" line="35" lineEnd="35" colStart="27" colEnd="0"/>
+        <Function name="builtin_echo"/>
+      </FunctionCall>
+    </SinkInstance>
+    <SinkInstance ruleID="C5624965-3160-4822-AC22-405F9A741ED8">
+      <FunctionCall>
+        <SourceLocation path="source/index.php" line="35" lineEnd="35" colStart="27" colEnd="0"/>
+        <Function name="builtin_echo"/>
+      </FunctionCall>
+    </SinkInstance>
+    <SinkInstance ruleID="F9CB8F3E-C813-44CF-AF70-9BFA6609105D">
+      <FunctionCall>
+        <SourceLocation path="source/index.php" line="35" lineEnd="35" colStart="27" colEnd="0"/>
+        <Function name="builtin_echo"/>
+      </FunctionCall>
+    </SinkInstance>
+    <SinkInstance ruleID="347EF9E3-E25A-467C-970C-9F3FA308BF59">
+      <FunctionCall>
+        <SourceLocation path="source/basic.sql" line="44" lineEnd="44" colStart="8" colEnd="0"/>
+        <Function name="_sql_insert"/>
+      </FunctionCall>
+    </SinkInstance>
+    <SinkInstance ruleID="539DB603-8BC3-41E3-AB6F-9D7421CC0446">
+      <FunctionCall>
+        <SourceLocation path="source/index.php" line="32" lineEnd="32" colStart="17" colEnd="0"/>
+        <Function name="mysqli_query"/>
+      </FunctionCall>
+    </SinkInstance>
+    <SinkInstance ruleID="8FE82CAC-5E7E-491F-A8D0-DD41067E2951">
+      <FunctionCall>
+        <SourceLocation path="source/index.php" line="32" lineEnd="32" colStart="17" colEnd="0"/>
+        <Function name="mysqli_query"/>
+      </FunctionCall>
+    </SinkInstance>
+    <SinkInstance ruleID="FF858C20-4BCD-4EBA-8DBA-F1502AB06D2E">
+      <FunctionCall>
+        <SourceLocation path="source/index.php" line="32" lineEnd="32" colStart="17" colEnd="0"/>
+        <Function name="mysqli_query"/>
+      </FunctionCall>
+    </SinkInstance>
+    <SinkInstance ruleID="35EE2631-51F2-4696-9594-ECDEC9B56244">
+      <FunctionCall>
+        <SourceLocation path="source/index.php" line="20" lineEnd="20" colStart="45" colEnd="0"/>
+        <Function name="builtin_echo"/>
+      </FunctionCall>
+    </SinkInstance>
+    <SinkInstance ruleID="64392070-1C79-4CC8-B8D9-F3EC8A83341C">
+      <FunctionCall>
+        <SourceLocation path="source/index.php" line="20" lineEnd="20" colStart="45" colEnd="0"/>
+        <Function name="builtin_echo"/>
+      </FunctionCall>
+    </SinkInstance>
+    <SinkInstance ruleID="AF6C6C57-CA46-489C-B449-CFE4A5AB7202">
+      <FunctionCall>
+        <SourceLocation path="source/index.php" line="20" lineEnd="20" colStart="45" colEnd="0"/>
+        <Function name="builtin_echo"/>
+      </FunctionCall>
+    </SinkInstance>
+    <SinkInstance ruleID="C5624965-3160-4822-AC22-405F9A741ED8">
+      <FunctionCall>
+        <SourceLocation path="source/index.php" line="20" lineEnd="20" colStart="45" colEnd="0"/>
+        <Function name="builtin_echo"/>
+      </FunctionCall>
+    </SinkInstance>
+    <SinkInstance ruleID="F9CB8F3E-C813-44CF-AF70-9BFA6609105D">
+      <FunctionCall>
+        <SourceLocation path="source/index.php" line="20" lineEnd="20" colStart="45" colEnd="0"/>
+        <Function name="builtin_echo"/>
+      </FunctionCall>
+    </SinkInstance>
+    <SinkInstance ruleID="35EE2631-51F2-4696-9594-ECDEC9B56244">
+      <FunctionCall>
+        <SourceLocation path="source/index.php" line="26" lineEnd="26" colStart="9" colEnd="0"/>
+        <Function name="builtin_echo"/>
+      </FunctionCall>
+    </SinkInstance>
+    <SinkInstance ruleID="64392070-1C79-4CC8-B8D9-F3EC8A83341C">
+      <FunctionCall>
+        <SourceLocation path="source/index.php" line="26" lineEnd="26" colStart="9" colEnd="0"/>
+        <Function name="builtin_echo"/>
+      </FunctionCall>
+    </SinkInstance>
+    <SinkInstance ruleID="AF6C6C57-CA46-489C-B449-CFE4A5AB7202">
+      <FunctionCall>
+        <SourceLocation path="source/index.php" line="26" lineEnd="26" colStart="9" colEnd="0"/>
+        <Function name="builtin_echo"/>
+      </FunctionCall>
+    </SinkInstance>
+    <SinkInstance ruleID="C5624965-3160-4822-AC22-405F9A741ED8">
+      <FunctionCall>
+        <SourceLocation path="source/index.php" line="26" lineEnd="26" colStart="9" colEnd="0"/>
+        <Function name="builtin_echo"/>
+      </FunctionCall>
+    </SinkInstance>
+    <SinkInstance ruleID="F9CB8F3E-C813-44CF-AF70-9BFA6609105D">
+      <FunctionCall>
+        <SourceLocation path="source/index.php" line="26" lineEnd="26" colStart="9" colEnd="0"/>
+        <Function name="builtin_echo"/>
+      </FunctionCall>
+    </SinkInstance>
+  </Sinks>
+  <CalledWithNoDef>
+    <Function name="_sql_commit"/>
+    <Function name="exit"/>
+    <Function name="strpos"/>
+    <Function name="mysqli_connect_error"/>
+    <Function name="mysqli_connect_errno"/>
+    <Function name="mysqli_connect"/>
+    <Function name="mysqli_close"/>
+  </CalledWithNoDef>
+</ProgramData>
+<EngineData>
+  <EngineVersion>22.1.0.0166</EngineVersion>
+  <RulePacks>
+    <RulePack>
+      <RulePackID>686C4B2F-0321-4025-B9F4-6E26094B4746</RulePackID>
+      <SKU>RUL13242</SKU>
+      <Name>Fortify Secure Coding Rules, Community, Cloud</Name>
+      <Version>2022.3.0.0008</Version>
+      <MAC>H+cFPmX+ecRIUl0aqy9MSM5w6rKz2mNuXZFidmi4JU0=</MAC>
+    </RulePack>
+    <RulePack>
+      <RulePackID>0f56d3e1-999d-468d-adfa-99c250d3266b</RulePackID>
+      <SKU>RUL13244</SKU>
+      <Name>Fortify Secure Coding Rules, Community, PHP</Name>
+      <Version>2022.3.0.0008</Version>
+      <MAC>fvhwc0RKzi1aFu2S2vAd36bSqIsZ6qM2tu4MxCdfp4I=</MAC>
+    </RulePack>
+    <RulePack>
+      <RulePackID>97b8b0e6-618b-47cf-a7fb-8636faea6b75</RulePackID>
+      <SKU>RUL13240</SKU>
+      <Name>Fortify Secure Coding Rules, Community, Universal</Name>
+      <Version>2022.3.0.0008</Version>
+      <MAC>UZ4Ju1o1sbOMYL7nPhpyyrX++IB0BK3fzAN+xEx9t38=</MAC>
+    </RulePack>
+    <RulePack>
+      <RulePackID>BD292C4E-4216-4DB8-96C7-9B607BFD9584</RulePackID>
+      <SKU>RUL13059</SKU>
+      <Name>Fortify Secure Coding Rules, Core, JavaScript</Name>
+      <Version>2022.3.0.0008</Version>
+      <MAC>qZKfrOyu/8rAoV7Mk1lNYFEcT0cJE1Wwvn/381xMOzI=</MAC>
+    </RulePack>
+    <RulePack>
+      <RulePackID>343CBB32-087C-4A4E-8BD8-273B5F876069</RulePackID>
+      <SKU>RUL13058</SKU>
+      <Name>Fortify Secure Coding Rules, Core, PHP</Name>
+      <Version>2022.3.0.0008</Version>
+      <MAC>qu4/G7oP0MTJXFbzP6LoBmhCAhF/rp6BrIvaoIbOj9Y=</MAC>
+    </RulePack>
+    <RulePack>
+      <RulePackID>6494160B-E1DB-41F5-9840-2B1609EE7649</RulePackID>
+      <SKU>RUL13004</SKU>
+      <Name>Fortify Secure Coding Rules, Core, SQL</Name>
+      <Version>2022.3.0.0008</Version>
+      <MAC>TPVxtDsS5JKglFc5kELr5KDFN6akgAO0j0sIrHO1/p8=</MAC>
+    </RulePack>
+    <RulePack>
+      <RulePackID>88D39959-D322-499A-87F3-BC9E1193B07A</RulePackID>
+      <SKU>RUL13241</SKU>
+      <Name>Fortify Secure Coding Rules, Core, Universal</Name>
+      <Version>2022.3.0.0008</Version>
+      <MAC>EPw3+X1eZdJAkdlrNR+ZLCPySyhkNTqpPTh3JvkpB5s=</MAC>
+    </RulePack>
+    <RulePack>
+      <RulePackID>CD6959FC-0C37-45BE-9637-BAA43C3A4D56</RulePackID>
+      <SKU>RUL13005</SKU>
+      <Name>Fortify Secure Coding Rules, Extended, Configuration</Name>
+      <Version>2022.3.0.0008</Version>
+      <MAC>XTSxBErJQYXFsBqGxoJdz9zL/DhAxNlYS5UWfSbyDAw=</MAC>
+    </RulePack>
+    <RulePack>
+      <RulePackID>9C48678C-09B6-474D-B86D-97EE94D38F17</RulePackID>
+      <SKU>RUL13067</SKU>
+      <Name>Fortify Secure Coding Rules, Extended, Content</Name>
+      <Version>2022.3.0.0008</Version>
+      <MAC>d+7KlPZJreoiSWxpoK6j+JLPY/c4pzV/Meum0FMjfEQ=</MAC>
+    </RulePack>
+    <RulePack>
+      <RulePackID>C4D1969E-B734-47D3-87D4-73962C1D32E2</RulePackID>
+      <SKU>RUL13141</SKU>
+      <Name>Fortify Secure Coding Rules, Extended, JavaScript</Name>
+      <Version>2022.3.0.0008</Version>
+      <MAC>Y7az5qo3/jfMtjslW9gx5WzOEJ65/9KxD9NRBFSUw4M=</MAC>
+    </RulePack>
+    <RulePack>
+      <RulePackID>4BC5B2FA-C209-4DBC-9C3E-1D3EEFAF135A</RulePackID>
+      <SKU>RUL13025</SKU>
+      <Name>Fortify Secure Coding Rules, Extended, SQL</Name>
+      <Version>2022.3.0.0008</Version>
+      <MAC>CC7vDGp7Lun7RtnmF3nEpcg7F02n9RdaYTtsxGYxzJ8=</MAC>
+    </RulePack>
+  </RulePacks>
+  <Properties type="System">
+    <Property>
+      <name>awt.toolkit</name>
+      <value>sun.awt.X11.XToolkit</value>
+    </Property>
+    <Property>
+      <name>idea.io.use.nio2</name>
+      <value>true</value>
+    </Property>
+    <Property>
+      <name>java.specification.version</name>
+      <value>11</value>
+    </Property>
+    <Property>
+      <name>log4j.configurationFile</name>
+      <value>/app/sca/Core/config/log4j2.xml</value>
+    </Property>
+    <Property>
+      <name>log4j.isThreadContextMapInheritable</name>
+      <value>true</value>
+    </Property>
+    <Property>
+      <name>sun.cpu.isalist</name>
+      <value/>
+    </Property>
+    <Property>
+      <name>sun.jnu.encoding</name>
+      <value>ANSI_X3.4-1968</value>
+    </Property>
+    <Property>
+      <name>java.class.path</name>
+      <value>/app/sca/Core/lib/exe/sca-exe.jar</value>
+    </Property>
+    <Property>
+      <name>java.vm.vendor</name>
+      <value>Azul Systems, Inc.</value>
+    </Property>
+    <Property>
+      <name>sun.arch.data.model</name>
+      <value>64</value>
+    </Property>
+    <Property>
+      <name>java.vendor.url</name>
+      <value>http://www.azul.com/</value>
+    </Property>
+    <Property>
+      <name>user.timezone</name>
+      <value>GMT</value>
+    </Property>
+    <Property>
+      <name>psi.track.invalidation</name>
+      <value>true</value>
+    </Property>
+    <Property>
+      <name>idea.ignore.disabled.plugins</name>
+      <value>true</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.LogFileNameNoExt</name>
+      <value>scan</value>
+    </Property>
+    <Property>
+      <name>os.name</name>
+      <value>Linux</value>
+    </Property>
+    <Property>
+      <name>java.vm.specification.version</name>
+      <value>11</value>
+    </Property>
+    <Property>
+      <name>user.country</name>
+      <value>US</value>
+    </Property>
+    <Property>
+      <name>sun.boot.library.path</name>
+      <value>/app/sca/jre/lib</value>
+    </Property>
+    <Property>
+      <name>sun.java.command</name>
+      <value>sourceanalyzer -Djava.awt.headless=true -Dcom.sun.management.jmxremote=true -XX:+UseParallelGC -XX:SoftRefLRUPolicyMSPerMB=3000 --illegal-access=permit --add-exports=jdk.management/com.sun.management.internal=ALL-UNNAMED --add-exports=jdk.scripting.nashorn/jdk.nashorn.internal.runtime=ALL-UNNAMED --add-exports=java.base/jdk.internal.misc=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.util.regex=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/javax.crypto=ALL-UNNAMED --add-opens=java.management/sun.management=ALL-UNNAMED -Dcom.fortify.sca.env.exesearchpath=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/app/sca/bin -Dcom.fortify.sca.ProjectRoot=/fortify/.fortify -Dstdout.isatty=false -Dstderr.isatty=false -Dcom.fortify.sca.PID=4435 -Xmx29655447552 -Dcom.fortify.TotalPhysicalMemory=32950497280 -Xss16M -Dcom.fortify.sca.JVMArgs=-XX:+UseParallelGC -XX:SoftRefLRUPolicyMSPerMB=3000 --illegal-access=permit --add-exports=jdk.management/com.sun.management.internal=ALL-UNNAMED --add-exports=jdk.scripting.nashorn/jdk.nashorn.internal.runtime=ALL-UNNAMED --add-exports=java.base/jdk.internal.misc=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.util.regex=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/javax.crypto=ALL-UNNAMED --add-opens=java.management/sun.management=ALL-UNNAMED -Xmx29655447552 -Xss16M -Djava.class.path=/app/sca/Core/lib/exe/sca-exe.jar @/tmp/fortify.sc12128394521445458501.args</value>
+    </Property>
+    <Property>
+      <name>com.sun.management.jmxremote</name>
+      <value>true</value>
+    </Property>
+    <Property>
+      <name>jdk.debug</name>
+      <value>release</value>
+    </Property>
+    <Property>
+      <name>sun.cpu.endian</name>
+      <value>little</value>
+    </Property>
+    <Property>
+      <name>user.home</name>
+      <value>/fortify</value>
+    </Property>
+    <Property>
+      <name>user.language</name>
+      <value>en</value>
+    </Property>
+    <Property>
+      <name>java.specification.vendor</name>
+      <value>Oracle Corporation</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.LogFileDir</name>
+      <value>/fortify/80d9c432-72fd-4737-a748-826995cf6ff2</value>
+    </Property>
+    <Property>
+      <name>java.version.date</name>
+      <value>2022-02-08</value>
+    </Property>
+    <Property>
+      <name>java.home</name>
+      <value>/app/sca/jre</value>
+    </Property>
+    <Property>
+      <name>idea.plugins.compatible.build</name>
+      <value>201.6668.13</value>
+    </Property>
+    <Property>
+      <name>file.separator</name>
+      <value>/</value>
+    </Property>
+    <Property>
+      <name>java.vm.compressedOopsMode</name>
+      <value>Zero based</value>
+    </Property>
+    <Property>
+      <name>line.separator</name>
+      <value>
+</value>
+    </Property>
+    <Property>
+      <name>java.specification.name</name>
+      <value>Java Platform API Specification</value>
+    </Property>
+    <Property>
+      <name>java.vm.specification.vendor</name>
+      <value>Oracle Corporation</value>
+    </Property>
+    <Property>
+      <name>jdk.vendor.version</name>
+      <value>Zulu11.54+25-CA</value>
+    </Property>
+    <Property>
+      <name>java.awt.graphicsenv</name>
+      <value>sun.awt.X11GraphicsEnvironment</value>
+    </Property>
+    <Property>
+      <name>java.awt.headless</name>
+      <value>true</value>
+    </Property>
+    <Property>
+      <name>idea.home.path</name>
+      <value>/tmp</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.JVMArgs</name>
+      <value>-XX:+UseParallelGC -XX:SoftRefLRUPolicyMSPerMB=3000 --illegal-access=permit --add-exports=jdk.management/com.sun.management.internal=ALL-UNNAMED --add-exports=jdk.scripting.nashorn/jdk.nashorn.internal.runtime=ALL-UNNAMED --add-exports=java.base/jdk.internal.misc=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.util.regex=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/javax.crypto=ALL-UNNAMED --add-opens=java.management/sun.management=ALL-UNNAMED -Xmx29655447552 -Xss16M</value>
+    </Property>
+    <Property>
+      <name>stdout.isatty</name>
+      <value>false</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.PID</name>
+      <value>4435</value>
+    </Property>
+    <Property>
+      <name>sun.management.compiler</name>
+      <value>HotSpot 64-Bit Tiered Compilers</value>
+    </Property>
+    <Property>
+      <name>java.runtime.version</name>
+      <value>11.0.14.1+1-LTS</value>
+    </Property>
+    <Property>
+      <name>user.name</name>
+      <value>fortify</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.LogFileName</name>
+      <value>scan.log</value>
+    </Property>
+    <Property>
+      <name>path.separator</name>
+      <value>:</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.AppendLogFile</name>
+      <value>true</value>
+    </Property>
+    <Property>
+      <name>os.version</name>
+      <value>5.4.209-116.367.amzn2.x86_64</value>
+    </Property>
+    <Property>
+      <name>com.fortify.InstallRoot</name>
+      <value>/app/sca</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.LogFilePath</name>
+      <value>/fortify/80d9c432-72fd-4737-a748-826995cf6ff2/scan.log</value>
+    </Property>
+    <Property>
+      <name>java.runtime.name</name>
+      <value>OpenJDK Runtime Environment</value>
+    </Property>
+    <Property>
+      <name>file.encoding</name>
+      <value>ANSI_X3.4-1968</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.LogFileExt</name>
+      <value>.log</value>
+    </Property>
+    <Property>
+      <name>project.structure.add.tools.jar.to.new.jdk</name>
+      <value>false</value>
+    </Property>
+    <Property>
+      <name>psi.incremental.reparse.depth.limit</name>
+      <value>1000</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.LogFile</name>
+      <value>/fortify/80d9c432-72fd-4737-a748-826995cf6ff2/scan</value>
+    </Property>
+    <Property>
+      <name>java.vm.name</name>
+      <value>OpenJDK 64-Bit Server VM</value>
+    </Property>
+    <Property>
+      <name>stderr.isatty</name>
+      <value>false</value>
+    </Property>
+    <Property>
+      <name>java.vendor.version</name>
+      <value>Zulu11.54+25-CA</value>
+    </Property>
+    <Property>
+      <name>java.vendor.url.bug</name>
+      <value>http://www.azul.com/support/</value>
+    </Property>
+    <Property>
+      <name>java.io.tmpdir</name>
+      <value>/tmp</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.env.exesearchpath</name>
+      <value>/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/app/sca/bin</value>
+    </Property>
+    <Property>
+      <name>java.version</name>
+      <value>11.0.14.1</value>
+    </Property>
+    <Property>
+      <name>user.dir</name>
+      <value>/fortify/80d9c432-72fd-4737-a748-826995cf6ff2</value>
+    </Property>
+    <Property>
+      <name>ide.hide.excluded.files</name>
+      <value>false</value>
+    </Property>
+    <Property>
+      <name>os.arch</name>
+      <value>amd64</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.LogLevel</name>
+      <value>INFO</value>
+    </Property>
+    <Property>
+      <name>java.vm.specification.name</name>
+      <value>Java Virtual Machine Specification</value>
+    </Property>
+    <Property>
+      <name>java.awt.printerjob</name>
+      <value>sun.print.PSPrinterJob</value>
+    </Property>
+    <Property>
+      <name>sun.os.patch.level</name>
+      <value>unknown</value>
+    </Property>
+    <Property>
+      <name>com.fortify.TotalPhysicalMemory</name>
+      <value>32950497280</value>
+    </Property>
+    <Property>
+      <name>java.library.path</name>
+      <value>/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib</value>
+    </Property>
+    <Property>
+      <name>java.vm.info</name>
+      <value>mixed mode</value>
+    </Property>
+    <Property>
+      <name>java.vendor</name>
+      <value>Azul Systems, Inc.</value>
+    </Property>
+    <Property>
+      <name>java.vm.version</name>
+      <value>11.0.14.1+1-LTS</value>
+    </Property>
+    <Property>
+      <name>java.rmi.server.randomIDs</name>
+      <value>true</value>
+    </Property>
+    <Property>
+      <name>sun.io.unicode.encoding</name>
+      <value>UnicodeLittle</value>
+    </Property>
+    <Property>
+      <name>java.class.version</name>
+      <value>55.0</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.ProjectRoot</name>
+      <value>/fortify/.fortify</value>
+    </Property>
+    <Property>
+      <name>ast.loading.filter</name>
+      <value>false</value>
+    </Property>
+  </Properties>
+  <Properties type="Fortify">
+    <Property>
+      <name>max.file.path.length</name>
+      <value>255</value>
+    </Property>
+    <Property>
+      <name>com.fortify.search.defaultSyntaxVer</name>
+      <value>2</value>
+    </Property>
+    <Property>
+      <name>com.fortify.log.console</name>
+      <value>false</value>
+    </Property>
+    <Property>
+      <name>com.fortify.SCAExecutablePath</name>
+      <value>/app/sca/../SCA/bin</value>
+    </Property>
+    <Property>
+      <name>com.fortify.AuthenticationKey</name>
+      <value>/fortify/.fortify/config/tools</value>
+    </Property>
+    <Property>
+      <name>com.fortify.InstallationUserName</name>
+      <value>fortify</value>
+    </Property>
+    <Property>
+      <name>com.fortify.WorkingDirectory</name>
+      <value>/fortify/.fortify</value>
+    </Property>
+    <Property>
+      <name>com.fortify.Core</name>
+      <value>/app/sca/Core</value>
+    </Property>
+    <Property>
+      <name>com.fortify.VS.RequireASPPrecompilation</name>
+      <value>true</value>
+    </Property>
+    <Property>
+      <name>com.fortify.locale</name>
+      <value>en</value>
+    </Property>
+  </Properties>
+  <Properties type="SCA">
+    <Property>
+      <name>com.fortify.sca.fileextensions.ini</name>
+      <value>JAVA_PROPERTIES</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.skip.libraries.jQuery</name>
+      <value>jquery.js,jquery.min.js,jquery-migrate.js,jquery-migrate.min.js,jquery-ui.js,jquery-ui.min.js,jquery.mobile.js,jquery.mobile.min.js,jquery.color.js,jquery.color.min.js,jquery.color.svg-names.js,jquery.color.svg-names.min.js,jquery.color.plus-names.js,jquery.color.plus-names.min.js,jquery.tools.min.js</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.gcc4*</name>
+      <value>com.fortify.sca.util.compilers.GccCompiler</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.LowSeverityCutoff</name>
+      <value>1.0</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.skip.libraries.javascript</name>
+      <value>bootstrap.js,bootstrap.min.js,typescript.js,typescriptServices.js</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.page</name>
+      <value>VISUAL_FORCE</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.mxml</name>
+      <value>MXML</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.yml</name>
+      <value>YAML</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.pks</name>
+      <value>PLSQL</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.tsx</name>
+      <value>TYPESCRIPT</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.yaml</name>
+      <value>YAML</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.js</name>
+      <value>TYPESCRIPT</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.faces</name>
+      <value>JSPX</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.csdef</name>
+      <value>XML</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.phtml</name>
+      <value>PHP</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.CollectPerformanceData</name>
+      <value>true</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.cc</name>
+      <value>com.fortify.sca.util.compilers.GccCompiler</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.gradle</name>
+      <value>com.fortify.sca.util.compilers.GradleAdapter</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.skip.libraries.ES6</name>
+      <value>es6-shim.min.js,system-polyfills.js,shims_for_IE.js</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.DisableFunctionPointers</name>
+      <value>false</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.kt</name>
+      <value>KOTLIN</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.xmi</name>
+      <value>XML</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.bas</name>
+      <value>VB6</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.alias.mode.typescript</name>
+      <value>fi</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.wadcfg</name>
+      <value>XML</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.wsdd</name>
+      <value>XML</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.settings</name>
+      <value>XML</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.g++</name>
+      <value>com.fortify.sca.util.compilers.GppCompiler</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.wsdl</name>
+      <value>XML</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.tag</name>
+      <value>JSP</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.cpx</name>
+      <value>XML</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.jam</name>
+      <value>com.fortify.sca.util.compilers.TouchlessCompiler</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.NoNestedOutTagOutput</name>
+      <value>org.apache.taglibs.standard.tag.rt.core.RemoveTag,org.apache.taglibs.standard.tag.rt.core.SetTag</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.PHPVersion</name>
+      <value>7.4</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.EnableNestedWrappers</name>
+      <value>true</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.mvn</name>
+      <value>com.fortify.sca.util.compilers.MavenAdapter</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.PrintPerformanceDataAfterScan</name>
+      <value>false</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.ant</name>
+      <value>com.fortify.sca.util.compilers.AntAdapter</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.lim.RequireTrustedSSLCert</name>
+      <value>true</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.ar</name>
+      <value>com.fortify.sca.util.compilers.ArUtil</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.ResultsFile</name>
+      <value>/fortify/80d9c432-72fd-4737-a748-826995cf6ff2/scan.fpr</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.pkh</name>
+      <value>PLSQL</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.sql</name>
+      <value>SQL</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.pkb</name>
+      <value>PLSQL</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.ProjectRoot</name>
+      <value>/fortify/.fortify</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.abap</name>
+      <value>ABAP</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.RequireMapKeys</name>
+      <value>jsp_static</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.alias.mode.scala</name>
+      <value>fi</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.SuppressLowSeverity</name>
+      <value>true</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.DefaultRulesDir</name>
+      <value>/app/sca/Core/config/rules</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.jsp.UseNativeParser</name>
+      <value>true</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.java</name>
+      <value>JAVA</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.EnableInterproceduralConstantResolution</name>
+      <value>true</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.FVDLDisableProgramData</name>
+      <value>false</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.alias.mode.csharp</name>
+      <value>fs</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.AntCompilerClass</name>
+      <value>com.fortify.dev.ant.SCACompiler</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.tagx</name>
+      <value>JSP</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.analyzer.controlflow.EnableLivenessOptimization</name>
+      <value>false</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.javac</name>
+      <value>com.fortify.sca.util.compilers.JavacCompiler</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.php</name>
+      <value>PHP</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.ThreadCount.NameTableLoading</name>
+      <value>1</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.make</name>
+      <value>com.fortify.sca.util.compilers.TouchlessCompiler</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.GoTranslator</name>
+      <value>/app/sca/Core/private-bin/sca/golang/golang</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.cscfg</name>
+      <value>XML</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.icc</name>
+      <value>com.fortify.sca.util.compilers.IntelCompiler</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.JdkVersion</name>
+      <value>1.8</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.frm</name>
+      <value>VB6</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.jsff</name>
+      <value>JSPX</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.CustomRulesDir</name>
+      <value>/app/sca/Core/config/customrules</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.PythonVersion</name>
+      <value>2</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.skip.libraries.AngularJS</name>
+      <value>angular.js,angular.min.js,angular-animate.js,angular-aria.js,angular_1_router.js,angular-cookies.js,angular-message-format.js,angular-messages.js,angular-mocks.js,angular-parse-ext.js,angular-resource.js,angular-route.js,angular-sanitize.js,angular-touch.js</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.appxmanifest</name>
+      <value>XML</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.scalac</name>
+      <value>com.fortify.sca.util.compilers.ScalacCompiler</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.cls</name>
+      <value>VB6</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.OldVbNetExcludeFileTypes</name>
+      <value>vb,asax,ascx,ashx,asmx,aspx,xaml,cshtml,vbhtml</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.g++4*</name>
+      <value>com.fortify.sca.util.compilers.GppCompiler</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.armcpp</name>
+      <value>com.fortify.sca.util.compilers.ArmCppCompiler</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.Dockerfile</name>
+      <value>DOCKERFILE</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.scala</name>
+      <value>SCALA</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.DisableGlobals</name>
+      <value>false</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.DeadCodeFilter</name>
+      <value>true</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.ABAP</name>
+      <value>ABAP</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.erb</name>
+      <value>RUBY_ERB</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.BuildID</name>
+      <value>sqli_1</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.DisableDeadCodeElimination</name>
+      <value>false</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.properties</name>
+      <value>JAVA_PROPERTIES</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.vbs</name>
+      <value>VBSCRIPT</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.BundleControlflowIssues</name>
+      <value>true</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.JavaSourcepathSearch</name>
+      <value>true</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.g++3*</name>
+      <value>com.fortify.sca.util.compilers.GppCompiler</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.htm</name>
+      <value>HTML</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.FVDLStylesheet</name>
+      <value>/app/sca/Core/resources/sca/fvdl2html.xsl</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.BuildOptions</name>
+      <value>-64 -b sqli_1 -logfile /fortify/80d9c432-72fd-4737-a748-826995cf6ff2/scan.log -Dcom.fortify.sca.fileextensions.sql=PLSQL Src</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.Phase0HigherOrder.Level</name>
+      <value>1</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.dockerfile</name>
+      <value>DOCKERFILE</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.Phase0HigherOrder.Languages</name>
+      <value>python,ruby,swift,javascript,typescript</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.config</name>
+      <value>XML</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.tld</name>
+      <value>TLD</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.EnableStructuralMatchCache</name>
+      <value>true</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.g++2*</name>
+      <value>com.fortify.sca.util.compilers.GppCompiler</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.ts</name>
+      <value>TYPESCRIPT</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.DisableInferredConstants</name>
+      <value>false</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.gmake</name>
+      <value>com.fortify.sca.util.compilers.TouchlessCompiler</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.DeadCodeIgnoreTrivialPredicates</name>
+      <value>true</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.html</name>
+      <value>HTML</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.tf</name>
+      <value>HCL</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.ld</name>
+      <value>com.fortify.sca.util.compilers.LdCompiler</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.analyzer.controlflow.EnableRefRuleOptimization</name>
+      <value>false</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.DaemonCompilers</name>
+      <value>com.fortify.sca.util.compilers.GppCompiler,com.fortify.sca.util.compilers.GccCompiler,com.fortify.sca.util.compilers.AppleGppCompiler,com.fortify.sca.util.compilers.AppleGccCompiler,com.fortify.sca.util.compilers.MicrosoftCompiler,com.fortify.sca.util.compilers.MicrosoftLinker,com.fortify.sca.util.compilers.LdCompiler,com.fortify.sca.util.compilers.ArUtil,com.fortify.sca.util.compilers.SunCCompiler,com.fortify.sca.util.compilers.SunCppCompiler,com.fortify.sca.util.compilers.IntelCompiler,com.fortify.sca.util.compilers.ExternalCppAdapter,com.fortify.sca.util.compilers.ClangCompiler</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.alias.mode.swift</name>
+      <value>fs</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.UniversalBlacklist</name>
+      <value>.*yyparse.*</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.gcc</name>
+      <value>com.fortify.sca.util.compilers.GccCompiler</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.IndirectCallGraphBuilders</name>
+      <value>WinFormsAdHocFunctionBuilder,VirtualCGBuilder,J2EEIndirectCGBuilder,JNICGBuilder,StoredProcedureResolver,JavaWSCGBuilder,StrutsCGBuilder,DotNetWSCGBuilder,SqlServerSPResolver,ASPCGBuilder,ScriptedCGBuilder,NewJspCustomTagCGBuilder,DotNetCABCGBuilder,StateInjectionCGBuilder,SqlServerSPResolver2,PHPLambdaResolver,JavaWebCGBuilder</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.analyzer.controlflow.EnableTimeOut</name>
+      <value>true</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.c++</name>
+      <value>com.fortify.sca.util.compilers.GppCompiler</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.py</name>
+      <value>PYTHON</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.icpc</name>
+      <value>com.fortify.sca.util.compilers.IntelCompiler</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.LogFile</name>
+      <value>/fortify/80d9c432-72fd-4737-a748-826995cf6ff2/scan.log</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.DefaultJarsDirs</name>
+      <value>default_jars</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.gcc-*</name>
+      <value>com.fortify.sca.util.compilers.GccCompiler</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.SolverTimeout</name>
+      <value>15</value>
+    </Property>
+    <Property>
+      <name>WinForms.CollectionMutationMonitor.Label</name>
+      <value>WinFormsDataSource</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.touchless</name>
+      <value>com.fortify.sca.util.compilers.FortifyCompiler</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.FVDLDisableSnippets</name>
+      <value>false</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.TypeInferenceFunctionTimeout</name>
+      <value>60</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.plist</name>
+      <value>XML</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.tcpp</name>
+      <value>com.fortify.sca.util.compilers.ArmCppCompiler</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.AddImpliedMethods</name>
+      <value>true</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.hcl</name>
+      <value>HCL</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.TypeInferencePhase0Timeout</name>
+      <value>300</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.rb</name>
+      <value>RUBY</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.as</name>
+      <value>ACTIONSCRIPT</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.clearmake</name>
+      <value>com.fortify.sca.util.compilers.TouchlessCompiler</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.xsd</name>
+      <value>XML</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.alias.mode.vb</name>
+      <value>fs</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.jspx</name>
+      <value>JSPX</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.cfc</name>
+      <value>CFML</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.xhtml</name>
+      <value>JSPX</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.analyzer.controlflow.EnableMachineFiltering</name>
+      <value>false</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.go</name>
+      <value>GO</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.MultithreadedAnalysis</name>
+      <value>true</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.alias.mode.javascript</name>
+      <value>fi</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.trigger</name>
+      <value>APEX_TRIGGER</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.parser.python.ignore.module.8</name>
+      <value>test.badsyntax_nocaret</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.parser.python.ignore.module.6</name>
+      <value>test.badsyntax_future8</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.parser.python.ignore.module.7</name>
+      <value>test.badsyntax_future9</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.parser.python.ignore.module.4</name>
+      <value>test.badsyntax_future6</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.parser.python.ignore.module.5</name>
+      <value>test.badsyntax_future7</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.conf</name>
+      <value>HOCON</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.SqlLanguage</name>
+      <value>PLSQL</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.parser.python.ignore.module.2</name>
+      <value>test.badsyntax_future4</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.parser.python.ignore.module.3</name>
+      <value>test.badsyntax_future5</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.cfm</name>
+      <value>CFML</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.tcc</name>
+      <value>com.fortify.sca.util.compilers.ArmCcCompiler</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.parser.python.ignore.module.1</name>
+      <value>test.badsyntax_future3</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.fortify</name>
+      <value>com.fortify.sca.util.compilers.FortifyCompiler</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.asp</name>
+      <value>ASP</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.EnableWrapperDetection</name>
+      <value>true</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.DefaultAnalyzers</name>
+      <value>semantic:dataflow:controlflow:nullptr:configuration:content:structural:buffer</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.FVDLDisableDescriptions</name>
+      <value>false</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.DisableCFRules</name>
+      <value>19EF0414-88CD-4882-82FC-BF3A89865666,4E28CEFE-1B94-4711-BF5A-EDA5D1B3E6BF,A2D33B21-FE55-4C53-86C6-2AB5BF343738,7F4CC818-7525-440B-9C68-02267A80179A,7F80BA1C-82E9-4F2A-BBB4-ADFDFB27B215,E650C773-2BB6-42AA-BC29-370AAF0C53ED</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.swift</name>
+      <value>SWIFT</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.g++-*</name>
+      <value>com.fortify.sca.util.compilers.GppCompiler</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.cfml</name>
+      <value>CFML</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.skip.libraries.typescript</name>
+      <value>typescript.d.ts,typescriptServices.d.ts</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.BSP</name>
+      <value>ABAP</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.ctp</name>
+      <value>PHP</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.gcc2*</name>
+      <value>com.fortify.sca.util.compilers.GccCompiler</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.gradlew</name>
+      <value>com.fortify.sca.util.compilers.GradleAdapter</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.ctl</name>
+      <value>VB6</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.xml</name>
+      <value>XML</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.wadcfgx</name>
+      <value>XML</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.vbscript</name>
+      <value>VBSCRIPT</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.armcc</name>
+      <value>com.fortify.sca.util.compilers.ArmCcCompiler</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.json</name>
+      <value>JSON</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.UnicodeInputFile</name>
+      <value>true</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.Config</name>
+      <value>XML</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.kts</name>
+      <value>KOTLIN</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.bsp</name>
+      <value>ABAP</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.compilers.gcc3*</name>
+      <value>com.fortify.sca.util.compilers.GccCompiler</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.TypeInferenceLanguages</name>
+      <value>javascript,typescript,python,ruby</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.xcfg</name>
+      <value>XML</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.DefaultFileTypes</name>
+      <value>java,rb,erb,jsp,jspx,jspf,tag,tagx,tld,sql,cfm,php,phtml,ctp,pks,pkh,pkb,xml,config,Config,settings,properties,dll,exe,winmd,cs,vb,asax,ascx,ashx,asmx,aspx,master,Master,xaml,baml,cshtml,vbhtml,razor,inc,asp,vbscript,js,jsx,ini,bas,cls,vbs,frm,ctl,html,htm,xsd,wsdd,xmi,py,cfml,cfc,abap,xhtml,cpx,xcfg,jsff,as,mxml,cbl,cob,cscfg,csdef,wadcfg,wadcfgx,appxmanifest,wsdl,plist,bsp,ABAP,BSP,swift,page,trigger,scala,ts,tsx,conf,json,yaml,yml,tf,hcl,go,kt,kts,Dockerfile,dockerfile</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.jsx</name>
+      <value>TYPESCRIPT</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.jspf</name>
+      <value>JSP</value>
+    </Property>
+    <Property>
+      <name>com.fortify.sca.fileextensions.jsp</name>
+      <value>JSP</value>
+    </Property>
+  </Properties>
+  <CommandLine>
+    <Argument>-64</Argument>
+    <Argument>-b</Argument>
+    <Argument>sqli_1</Argument>
+    <Argument>-logfile</Argument>
+    <Argument>/fortify/80d9c432-72fd-4737-a748-826995cf6ff2/scan.log</Argument>
+    <Argument>-f</Argument>
+    <Argument>/fortify/80d9c432-72fd-4737-a748-826995cf6ff2/scan.fpr</Argument>
+    <Argument>-scan</Argument>
+  </CommandLine>
+  <Errors/>
+  <MachineInfo>
+    <Hostname>scancentral-scancentral-sast-worker-8</Hostname>
+    <Username>fortify</Username>
+    <Platform>Linux</Platform>
+  </MachineInfo>
+  <FilterResult/>
+  <RuleInfo>
+    <Rule id="10AB223B-7AA6-464A-A036-4616C822C299">
+      <MetaInfo>
+        <Group name="package">Dockerfile Configuration</Group>
+        <Group name="altcategoryGDPR">Indirect Access to Sensitive Data</Group>
+        <Group name="altcategoryNISTSP800-53Rev.4">None</Group>
+        <Group name="altcategoryNISTSP800-53Rev.5">None</Group>
+        <Group name="altcategorySTIG4.1">None</Group>
+        <Group name="altcategorySTIG4.2">None</Group>
+        <Group name="altcategorySTIG4.3">None</Group>
+        <Group name="altcategorySTIG4.4">None</Group>
+        <Group name="altcategorySTIG4.5">None</Group>
+        <Group name="altcategorySTIG4.6">None</Group>
+        <Group name="altcategorySTIG4.7">None</Group>
+        <Group name="altcategorySTIG4.8">None</Group>
+        <Group name="altcategorySTIG4.9">None</Group>
+        <Group name="altcategorySTIG4.10">None</Group>
+        <Group name="altcategorySTIG4.11">None</Group>
+        <Group name="altcategorySTIG5.1">None</Group>
+        <Group name="altcategoryDISACCI2">None</Group>
+        <Group name="altcategoryCWE">CWE ID 20</Group>
+        <Group name="altcategoryOWASPASVS4.0">5.1.3 Input Validation Requirements (L1 L2 L3), 5.1.4 Input Validation Requirements (L1 L2 L3)</Group>
+        <Group name="altcategoryMISRAC2012">None</Group>
+        <Group name="altcategoryMISRAC++2008">None</Group>
+        <Group name="altcategoryOWASP2004">A10 Insecure Configuration Management</Group>
+        <Group name="altcategoryOWASP2007">None</Group>
+        <Group name="altcategoryOWASP2010">A6 Security Misconfiguration</Group>
+        <Group name="altcategoryOWASP2013">A5 Security Misconfiguration</Group>
+        <Group name="altcategoryOWASP2017">A6 Security Misconfiguration</Group>
+        <Group name="altcategoryOWASP2021">A05 Security Misconfiguration</Group>
+        <Group name="altcategoryOWASPMobile2014">M1 Weak Server Side Controls</Group>
+        <Group name="altcategorySANS2009">Insecure Interaction - CWE ID 020</Group>
+        <Group name="altcategoryCWETop252019">[3] CWE ID 020</Group>
+        <Group name="altcategoryCWETop252020">[3] CWE ID 020</Group>
+        <Group name="altcategoryCWETop252021">[4] CWE ID 020</Group>
+        <Group name="altcategoryCWETop252022">[4] CWE ID 020</Group>
+        <Group name="altcategoryFISMA">CM</Group>
+        <Group name="altcategoryPCI1.1">Requirement 6.5.10</Group>
+        <Group name="altcategoryPCI1.2">None</Group>
+        <Group name="altcategoryPCI2.0">None</Group>
+        <Group name="altcategoryPCI3.0">Requirement 6.5.6</Group>
+        <Group name="altcategoryPCI3.1">Requirement 6.5.6</Group>
+        <Group name="altcategoryPCI3.2">Requirement 6.5.6</Group>
+        <Group name="altcategoryPCI3.2.1">Requirement 6.5.6</Group>
+        <Group name="altcategoryPCISSF1.0">Control Objective 4.2 - Critical Asset Protection</Group>
+        <Group name="altcategoryPCISSF1.1">Control Objective 4.2 - Critical Asset Protection</Group>
+        <Group name="altcategorySTIG3.1">None</Group>
+        <Group name="altcategorySTIG3.4">None</Group>
+        <Group name="altcategorySTIG3.5">None</Group>
+        <Group name="altcategorySTIG3.6">None</Group>
+        <Group name="altcategorySTIG3.7">None</Group>
+        <Group name="altcategorySTIG3.9">None</Group>
+        <Group name="altcategorySTIG3.10">None</Group>
+        <Group name="altcategoryWASC24+2">None</Group>
+        <Group name="altcategoryWASC2.00">Application Misconfiguration (WASC-15)</Group>
+        <Group name="altcategorySANS2010">None</Group>
+        <Group name="altcategorySANSTop252011">None</Group>
+        <Group name="Accuracy">3.5</Group>
+        <Group name="Impact">3.0</Group>
+        <Group name="Probability">3.0</Group>
+        <Group name="PrimaryAudience">security</Group>
+        <Group name="ImpactBias">Normal</Group>
+        <Group name="ConfidentialityImpact">None</Group>
+        <Group name="IntegrityImpact">Partial</Group>
+        <Group name="AvailabilityImpact">Partial</Group>
+        <Group name="RemediationEffort">1.0</Group>
+        <Group name="audience">broad,fod</Group>
+      </MetaInfo>
+    </Rule>
+    <Rule id="375B7CCC-5920-4230-AE53-A7B264045525">
+      <MetaInfo>
+        <Group name="package">Dockerfile Configuration</Group>
+        <Group name="altcategoryGDPR">Indirect Access to Sensitive Data</Group>
+        <Group name="altcategoryNISTSP800-53Rev.4">None</Group>
+        <Group name="altcategoryNISTSP800-53Rev.5">None</Group>
+        <Group name="altcategorySTIG4.1">None</Group>
+        <Group name="altcategorySTIG4.2">None</Group>
+        <Group name="altcategorySTIG4.3">None</Group>
+        <Group name="altcategorySTIG4.4">None</Group>
+        <Group name="altcategorySTIG4.5">None</Group>
+        <Group name="altcategorySTIG4.6">None</Group>
+        <Group name="altcategorySTIG4.7">None</Group>
+        <Group name="altcategorySTIG4.8">None</Group>
+        <Group name="altcategorySTIG4.9">None</Group>
+        <Group name="altcategorySTIG4.10">None</Group>
+        <Group name="altcategorySTIG4.11">None</Group>
+        <Group name="altcategorySTIG5.1">None</Group>
+        <Group name="altcategoryDISACCI2">None</Group>
+        <Group name="altcategoryCWE">CWE ID 20</Group>
+        <Group name="altcategoryOWASPASVS4.0">5.1.3 Input Validation Requirements (L1 L2 L3), 5.1.4 Input Validation Requirements (L1 L2 L3)</Group>
+        <Group name="altcategoryMISRAC2012">None</Group>
+        <Group name="altcategoryMISRAC++2008">None</Group>
+        <Group name="altcategoryOWASP2004">A10 Insecure Configuration Management</Group>
+        <Group name="altcategoryOWASP2007">None</Group>
+        <Group name="altcategoryOWASP2010">A6 Security Misconfiguration</Group>
+        <Group name="altcategoryOWASP2013">A5 Security Misconfiguration</Group>
+        <Group name="altcategoryOWASP2017">A6 Security Misconfiguration</Group>
+        <Group name="altcategoryOWASP2021">A05 Security Misconfiguration</Group>
+        <Group name="altcategoryOWASPMobile2014">M1 Weak Server Side Controls</Group>
+        <Group name="altcategorySANS2009">Insecure Interaction - CWE ID 020</Group>
+        <Group name="altcategoryCWETop252019">[3] CWE ID 020</Group>
+        <Group name="altcategoryCWETop252020">[3] CWE ID 020</Group>
+        <Group name="altcategoryCWETop252021">[4] CWE ID 020</Group>
+        <Group name="altcategoryCWETop252022">[4] CWE ID 020</Group>
+        <Group name="altcategoryFISMA">CM</Group>
+        <Group name="altcategoryPCI1.1">Requirement 6.5.10</Group>
+        <Group name="altcategoryPCI1.2">None</Group>
+        <Group name="altcategoryPCI2.0">None</Group>
+        <Group name="altcategoryPCI3.0">Requirement 6.5.6</Group>
+        <Group name="altcategoryPCI3.1">Requirement 6.5.6</Group>
+        <Group name="altcategoryPCI3.2">Requirement 6.5.6</Group>
+        <Group name="altcategoryPCI3.2.1">Requirement 6.5.6</Group>
+        <Group name="altcategoryPCISSF1.0">Control Objective 4.2 - Critical Asset Protection</Group>
+        <Group name="altcategoryPCISSF1.1">Control Objective 4.2 - Critical Asset Protection</Group>
+        <Group name="altcategorySTIG3.1">None</Group>
+        <Group name="altcategorySTIG3.4">None</Group>
+        <Group name="altcategorySTIG3.5">None</Group>
+        <Group name="altcategorySTIG3.6">None</Group>
+        <Group name="altcategorySTIG3.7">None</Group>
+        <Group name="altcategorySTIG3.9">None</Group>
+        <Group name="altcategorySTIG3.10">None</Group>
+        <Group name="altcategoryWASC24+2">None</Group>
+        <Group name="altcategoryWASC2.00">Application Misconfiguration (WASC-15)</Group>
+        <Group name="altcategorySANS2010">None</Group>
+        <Group name="altcategorySANSTop252011">None</Group>
+        <Group name="Accuracy">5.0</Group>
+        <Group name="Impact">4.0</Group>
+        <Group name="Probability">2.0</Group>
+        <Group name="PrimaryAudience">security</Group>
+        <Group name="ImpactBias">Normal</Group>
+        <Group name="ConfidentialityImpact">Partial</Group>
+        <Group name="IntegrityImpact">Partial</Group>
+        <Group name="AvailabilityImpact">None</Group>
+        <Group name="RemediationEffort">1.0</Group>
+        <Group name="audience">medium,broad,fod,targeted</Group>
+      </MetaInfo>
+    </Rule>
+    <Rule id="6DBD0F5A-99EB-53B7-AB1E-D9B012E68020">
+      <MetaInfo>
+        <Group name="package">General Secrets</Group>
+        <Group name="altcategoryGDPR">Insufficient Data Protection</Group>
+        <Group name="altcategoryNISTSP800-53Rev.4">SC-12 Cryptographic Key Establishment and Management (P1)</Group>
+        <Group name="altcategoryNISTSP800-53Rev.5">SC-12 Cryptographic Key Establishment and Management</Group>
+        <Group name="altcategorySTIG4.1">APSC-DV-002010 CAT II</Group>
+        <Group name="altcategorySTIG4.2">APSC-DV-002010 CAT II</Group>
+        <Group name="altcategorySTIG4.3">APSC-DV-002010 CAT II</Group>
+        <Group name="altcategorySTIG4.4">APSC-DV-002010 CAT II</Group>
+        <Group name="altcategorySTIG4.5">APSC-DV-002010 CAT II</Group>
+        <Group name="altcategorySTIG4.6">APSC-DV-002010 CAT II</Group>
+        <Group name="altcategorySTIG4.7">APSC-DV-002010 CAT II</Group>
+        <Group name="altcategorySTIG4.8">APSC-DV-002010 CAT II</Group>
+        <Group name="altcategorySTIG4.9">APSC-DV-002010 CAT II</Group>
+        <Group name="altcategorySTIG4.10">APSC-DV-002010 CAT II</Group>
+        <Group name="altcategorySTIG4.11">APSC-DV-002010 CAT II</Group>
+        <Group name="altcategorySTIG5.1">APSC-DV-002010 CAT II</Group>
+        <Group name="altcategoryDISACCI2">CCI-002450</Group>
+        <Group name="altcategoryCWE">CWE ID 321</Group>
+        <Group name="altcategoryOWASPASVS4.0">2.6.3 Look-up Secret Verifier Requirements (L2 L3), 2.7.1 Out of Band Verifier Requirements (L1 L2 L3), 2.7.2 Out of Band Verifier Requirements (L1 L2 L3), 2.7.3 Out of Band Verifier Requirements (L1 L2 L3), 2.8.4 Single or Multi Factor One Time Verifier Requirements (L2 L3), 2.8.5 Single or Multi Factor One Time Verifier Requirements (L2 L3), 2.9.1 Cryptographic Software and Devices Verifier Requirements (L2 L3), 2.10.2 Service Authentication Requirements (L2 L3), 2.10.4 Service Authentication Requirements (L2 L3), 3.5.2 Token-based Session Management (L2 L3), 3.7.1 Defenses Against Session Management Exploits (L1 L2 L3), 6.2.1 Algorithms (L1 L2 L3), 6.4.1 Secret Management (L2 L3), 6.4.2 Secret Management (L2 L3), 9.2.3 Server Communications Security Requirements (L2 L3), 10.2.3 Malicious Code Search (L3)</Group>
+        <Group name="altcategoryMISRAC2012">None</Group>
+        <Group name="altcategoryMISRAC++2008">None</Group>
+        <Group name="altcategoryOWASP2004">A8 Insecure Storage</Group>
+        <Group name="altcategoryOWASP2007">A8 Insecure Cryptographic Storage</Group>
+        <Group name="altcategoryOWASP2010">A7 Insecure Cryptographic Storage</Group>
+        <Group name="altcategoryOWASP2013">A6 Sensitive Data Exposure</Group>
+        <Group name="altcategoryOWASP2017">A3 Sensitive Data Exposure</Group>
+        <Group name="altcategoryOWASP2021">A02 Cryptographic Failures</Group>
+        <Group name="altcategoryOWASPMobile2014">M6 Broken Cryptography</Group>
+        <Group name="altcategorySANS2009">Porous Defenses - CWE ID 259</Group>
+        <Group name="altcategoryCWETop252019">[13] CWE ID 287, [19] CWE ID 798</Group>
+        <Group name="altcategoryCWETop252020">[14] CWE ID 287, [20] CWE ID 798</Group>
+        <Group name="altcategoryCWETop252021">[14] CWE ID 287, [16] CWE ID 798</Group>
+        <Group name="altcategoryCWETop252022">[14] CWE ID 287, [15] CWE ID 798</Group>
+        <Group name="altcategoryFISMA">IA</Group>
+        <Group name="altcategoryPCI1.1">Requirement 6.5.8, Requirement 8.4</Group>
+        <Group name="altcategoryPCI1.2">Requirement 6.3.1.3, Requirement 6.5.8, Requirement 8.4</Group>
+        <Group name="altcategoryPCI2.0">Requirement 6.3.1, Requirement 6.5.3, Requirement 8.4</Group>
+        <Group name="altcategoryPCI3.0">Requirement 6.3.1, Requirement 6.5.3, Requirement 8.2.1</Group>
+        <Group name="altcategoryPCI3.1">Requirement 6.3.1, Requirement 6.5.3, Requirement 8.2.1</Group>
+        <Group name="altcategoryPCI3.2">Requirement 6.3.1, Requirement 6.5.3, Requirement 8.2.1</Group>
+        <Group name="altcategoryPCI3.2.1">Requirement 6.3.1, Requirement 6.5.3, Requirement 8.2.1</Group>
+        <Group name="altcategoryPCISSF1.0">Control Objective 7.2 - Use of Cryptography</Group>
+        <Group name="altcategoryPCISSF1.1">Control Objective 7.2 - Use of Cryptography, Control Objective B.2.3 - Terminal Software Design</Group>
+        <Group name="altcategorySTIG3.1">APP3210.1 CAT II, APP3350 CAT I</Group>
+        <Group name="altcategorySTIG3.4">APP3210.1 CAT II, APP3350 CAT I</Group>
+        <Group name="altcategorySTIG3.5">APP3210.1 CAT II, APP3350 CAT I</Group>
+        <Group name="altcategorySTIG3.6">APP3210.1 CAT II, APP3350 CAT I</Group>
+        <Group name="altcategorySTIG3.7">APP3210.1 CAT II, APP3350 CAT I</Group>
+        <Group name="altcategorySTIG3.9">APP3210.1 CAT II, APP3350 CAT I</Group>
+        <Group name="altcategorySTIG3.10">APP3210.1 CAT II, APP3350 CAT I</Group>
+        <Group name="altcategoryWASC24+2">None</Group>
+        <Group name="altcategoryWASC2.00">Information Leakage (WASC-13)</Group>
+        <Group name="altcategorySANS2010">Porous Defenses - CWE ID 798</Group>
+        <Group name="altcategorySANSTop252011">Porous Defenses - CWE ID 798</Group>
+        <Group name="Accuracy">5.0</Group>
+        <Group name="Impact">3.0</Group>
+        <Group name="Probability">4.0</Group>
+        <Group name="PrimaryAudience">security</Group>
+        <Group name="ImpactBias">Integrity</Group>
+        <Group name="ConfidentialityImpact">Partial</Group>
+        <Group name="IntegrityImpact">Complete</Group>
+        <Group name="AvailabilityImpact">None</Group>
+        <Group name="RemediationEffort">3.0</Group>
+        <Group name="audience">medium,broad,fod</Group>
+      </MetaInfo>
+    </Rule>
+    <Rule id="FEA6DB27-D630-488F-9762-9534543C4DD90">
+      <MetaInfo>
+        <Group name="package">PHP Fortify Source</Group>
+        <Group name="inputsource">Web</Group>
+        <Group name="audience">dev,medium,broad,fod,targeted</Group>
+      </MetaInfo>
+    </Rule>
+    <Rule id="FF858C20-4BCD-4EBA-8DBA-F1502AB06D2E">
+      <MetaInfo>
+        <Group name="package">PHP Mysql</Group>
+        <Group name="altcategoryGDPR">Indirect Access to Sensitive Data</Group>
+        <Group name="altcategoryNISTSP800-53Rev.4">SI-10 Information Input Validation (P1)</Group>
+        <Group name="altcategoryNISTSP800-53Rev.5">SI-10 Information Input Validation</Group>
+        <Group name="altcategorySTIG4.1">APSC-DV-002540 CAT I, APSC-DV-002560 CAT I</Group>
+        <Group name="altcategorySTIG4.2">APSC-DV-002540 CAT I, APSC-DV-002560 CAT I</Group>
+        <Group name="altcategorySTIG4.3">APSC-DV-002540 CAT I, APSC-DV-002560 CAT I</Group>
+        <Group name="altcategorySTIG4.4">APSC-DV-002540 CAT I, APSC-DV-002560 CAT I</Group>
+        <Group name="altcategorySTIG4.5">APSC-DV-002540 CAT I, APSC-DV-002560 CAT I</Group>
+        <Group name="altcategorySTIG4.6">APSC-DV-002540 CAT I, APSC-DV-002560 CAT I</Group>
+        <Group name="altcategorySTIG4.7">APSC-DV-002540 CAT I, APSC-DV-002560 CAT I</Group>
+        <Group name="altcategorySTIG4.8">APSC-DV-002540 CAT I, APSC-DV-002560 CAT I</Group>
+        <Group name="altcategorySTIG4.9">APSC-DV-002540 CAT I, APSC-DV-002560 CAT I</Group>
+        <Group name="altcategorySTIG4.10">APSC-DV-002540 CAT I, APSC-DV-002560 CAT I</Group>
+        <Group name="altcategorySTIG4.11">APSC-DV-002540 CAT I, APSC-DV-002560 CAT I</Group>
+        <Group name="altcategorySTIG5.1">APSC-DV-002540 CAT I, APSC-DV-002560 CAT I</Group>
+        <Group name="altcategoryDISACCI2">CCI-001310, CCI-002754</Group>
+        <Group name="altcategoryCWE">CWE ID 89</Group>
+        <Group name="altcategoryOWASPASVS4.0">5.3.4 Output Encoding and Injection Prevention Requirements (L1 L2 L3), 5.3.5 Output Encoding and Injection Prevention Requirements (L1 L2 L3)</Group>
+        <Group name="altcategoryMISRAC2012">Rule 1.3</Group>
+        <Group name="altcategoryMISRAC++2008">Rule 0-3-1</Group>
+        <Group name="altcategoryOWASP2004">A6 Injection Flaws</Group>
+        <Group name="altcategoryOWASP2007">A2 Injection Flaws</Group>
+        <Group name="altcategoryOWASP2010">A1 Injection</Group>
+        <Group name="altcategoryOWASP2013">A1 Injection</Group>
+        <Group name="altcategoryOWASP2017">A1 Injection</Group>
+        <Group name="altcategoryOWASP2021">A03 Injection</Group>
+        <Group name="altcategoryOWASPMobile2014">M7 Client Side Injection</Group>
+        <Group name="altcategorySANS2009">Insecure Interaction - CWE ID 089</Group>
+        <Group name="altcategoryCWETop252019">[6] CWE ID 089</Group>
+        <Group name="altcategoryCWETop252020">[6] CWE ID 089</Group>
+        <Group name="altcategoryCWETop252021">[6] CWE ID 089</Group>
+        <Group name="altcategoryCWETop252022">[3] CWE ID 089</Group>
+        <Group name="altcategoryFISMA">SI</Group>
+        <Group name="altcategoryPCI1.1">Requirement 6.5.6</Group>
+        <Group name="altcategoryPCI1.2">Requirement 6.3.1.1, Requirement 6.5.2</Group>
+        <Group name="altcategoryPCI2.0">Requirement 6.5.1</Group>
+        <Group name="altcategoryPCI3.0">Requirement 6.5.1</Group>
+        <Group name="altcategoryPCI3.1">Requirement 6.5.1</Group>
+        <Group name="altcategoryPCI3.2">Requirement 6.5.1</Group>
+        <Group name="altcategoryPCI3.2.1">Requirement 6.5.1</Group>
+        <Group name="altcategoryPCISSF1.0">Control Objective 4.2 - Critical Asset Protection</Group>
+        <Group name="altcategoryPCISSF1.1">Control Objective 4.2 - Critical Asset Protection, Control Objective B.3.1 - Terminal Software Attack Mitigation, Control Objective B.3.1.1 - Terminal Software Attack Mitigation</Group>
+        <Group name="altcategorySTIG3.1">APP3510 CAT I, APP3540.1 CAT I, APP3540.3 CAT II</Group>
+        <Group name="altcategorySTIG3.4">APP3510 CAT I, APP3540.1 CAT I, APP3540.3 CAT II</Group>
+        <Group name="altcategorySTIG3.5">APP3510 CAT I, APP3540.1 CAT I, APP3540.3 CAT II</Group>
+        <Group name="altcategorySTIG3.6">APP3510 CAT I, APP3540.1 CAT I, APP3540.3 CAT II</Group>
+        <Group name="altcategorySTIG3.7">APP3510 CAT I, APP3540.1 CAT I, APP3540.3 CAT II</Group>
+        <Group name="altcategorySTIG3.9">APP3510 CAT I, APP3540.1 CAT I, APP3540.3 CAT II</Group>
+        <Group name="altcategorySTIG3.10">APP3510 CAT I, APP3540.1 CAT I, APP3540.3 CAT II</Group>
+        <Group name="altcategoryWASC24+2">SQL Injection</Group>
+        <Group name="altcategoryWASC2.00">SQL Injection (WASC-19)</Group>
+        <Group name="altcategorySANS2010">Insecure Interaction - CWE ID 089</Group>
+        <Group name="altcategorySANSTop252011">Insecure Interaction - CWE ID 089</Group>
+        <Group name="Accuracy">5.0</Group>
+        <Group name="Impact">5.0</Group>
+        <Group name="Probability">5.0</Group>
+        <Group name="PrimaryAudience">security</Group>
+        <Group name="ImpactBias">Integrity</Group>
+        <Group name="ConfidentialityImpact">Partial</Group>
+        <Group name="IntegrityImpact">Complete</Group>
+        <Group name="AvailabilityImpact">None</Group>
+        <Group name="RemediationEffort">1.0</Group>
+        <Group name="audience">dev,medium,broad,fod,targeted</Group>
+      </MetaInfo>
+    </Rule>
+  </RuleInfo>
+  <LicenseInfo>
+    <Metadata>
+      <name>owner</name>
+      <value>Celfocus - SoluÃ§Ãµes InformÃ¡ticas Para TelecomunicaÃ§Ãµes, S.A.</value>
+    </Metadata>
+    <Metadata>
+      <name>License Description</name>
+      <value>200 developers,200xSP-AE265, SOESL00040001028, Celfocus - SoluÃ§Ãµes InformÃ¡ticas Para TelecomunicaÃ§Ãµes, S.A. 166135652801217597,00865800</value>
+    </Metadata>
+    <Metadata>
+      <name>Subscription ID</name>
+      <value>S9b81932d-0c2a-4bea-be08-87ec8648582c</value>
+    </Metadata>
+    <Metadata>
+      <name>License ID</name>
+      <value>Lf167f18b-9584-41c5-b58a-6da5bb9d396e</value>
+    </Metadata>
+    <Metadata>
+      <name>Created On</name>
+      <value>2022-11-03 06:18:39.0</value>
+    </Metadata>
+    <Capability>
+      <Name>SCA-ColdFusion-Support</Name>
+      <Expiration>2032-12-31</Expiration>
+    </Capability>
+    <Capability>
+      <Name>AuditWorkbench</Name>
+      <Expiration>2032-12-31</Expiration>
+    </Capability>
+    <Capability>
+      <Name>SecurityAssistantJava</Name>
+      <Expiration>2032-12-31</Expiration>
+    </Capability>
+    <Capability>
+      <Name>SCA-ABAP-Support</Name>
+      <Expiration>2032-12-31</Expiration>
+    </Capability>
+    <Capability>
+      <Name>SecurityAssistantDOTNET</Name>
+      <Expiration>2032-12-31</Expiration>
+    </Capability>
+    <Capability>
+      <Name>RulePackUpdate</Name>
+      <Expiration>2122-11-03</Expiration>
+      <Attribute>
+        <name>lid</name>
+        <value>Lf167f18b-9584-41c5-b58a-6da5bb9d396e</value>
+      </Attribute>
+    </Capability>
+    <Capability>
+      <Name>F360-CollabModule</Name>
+      <Expiration>2032-12-31</Expiration>
+    </Capability>
+    <Capability>
+      <Name>SecurityAssistant</Name>
+      <Expiration>2032-12-31</Expiration>
+    </Capability>
+    <Capability>
+      <Name>SCA-Analysis</Name>
+      <Expiration>2032-12-31</Expiration>
+    </Capability>
+    <Capability>
+      <Name>JDeveloperPlugins</Name>
+      <Expiration>2032-12-31</Expiration>
+    </Capability>
+    <Capability>
+      <Name>F360-Server</Name>
+      <Expiration>2032-12-31</Expiration>
+    </Capability>
+    <Capability>
+      <Name>SCA-COBOL-Support</Name>
+      <Expiration>2032-12-31</Expiration>
+    </Capability>
+    <Capability>
+      <Name>SCA-Python-Support</Name>
+      <Expiration>2032-12-31</Expiration>
+    </Capability>
+    <Capability>
+      <Name>VSPlugins</Name>
+      <Expiration>2032-12-31</Expiration>
+    </Capability>
+    <Capability>
+      <Name>EclipsePlugins</Name>
+      <Expiration>2032-12-31</Expiration>
+    </Capability>
+    <Capability>
+      <Name>Enterprise-Reporting</Name>
+      <Expiration>2032-12-31</Expiration>
+    </Capability>
+  </LicenseInfo>
+</EngineData>
+</FVDL>

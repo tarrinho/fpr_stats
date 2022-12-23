@@ -102,12 +102,12 @@ do
 #uncomment for debug   echo ${status_vuln[$i]}
 done
 
-
-## number of Critical - InstanceSeverity>4
-#critical=`unzip -p $filename audit.fvdl | grep -i "<InstanceSeverity>4" | wc -l | xargs`
-## number of high - InstanceSeverity>3
-#high=`unzip -p $filename audit.fvdl | grep -i "<InstanceSeverity>3" | wc -l | xargs`
-#
-##
-
 echo "The $app_name has $vuln_critical critical vulns and $vuln_high high, ones!"
+if [ $vuln_critical -gt 0 ] ||  [ $vuln_high -gt 0 ] 
+   then
+	   echo "Pipeline should break!"
+	   exit 1;
+   else
+	   echo "Pipeline can go forward!"
+	   exit 0;
+fi
