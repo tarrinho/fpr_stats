@@ -101,6 +101,8 @@ do
    fi
 #uncomment for debug   echo ${status_vuln[$i]}
 done
+# clean up
+`rm -f audit.fvdl`
 
 echo "The $app_name has $vuln_critical critical vulns and $vuln_high high, ones!"
 if [ $vuln_critical -gt 0 ] ||  [ $vuln_high -gt 0 ] 
