@@ -35,5 +35,13 @@ I saw in my investigations this logic and decided to use it in my code. If you h
      Low
 ```
 
+**Requirements**
+ - unzip
+ - bc 
+ - xmllint
+
+To install just do :
+> apt get install unzip xmllint bc -y
+
 Disclaimer: This script was made by me for me. It is provided “as is” without any warranty whatsoever, including accuracy and comprehensiveness.  
 The copyright holder of this code may change the contents of this code at any time without prior notice, and the copyright holder disclaims any liability in relation to the recipient’s use of this code.
