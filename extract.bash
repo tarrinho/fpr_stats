@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Goal: list all Critical and High vulnerabilities in a FPR
-# requires : unzip installed
+# requires : unzip, bc, xmllint (libxml2-utils) installed
 
 ############################################################
 # Help                                                     #
@@ -15,7 +15,7 @@ Help()
    echo "Syntax:  [h|filename.fpr]"
    echo "options:"
    echo "h     Print this Help."
-   echo "f     filename.fpr - file to be analyzed"
+   echo "f     filename.fpr - file to be analyzed."
    echo
 }
 
@@ -51,61 +51,97 @@ fi
 # Present Application Name
 #app=`unzip -p $filename audit.fvdl`
 
-app=`unzip -o $filename audit.fvdl > /dev/null`
+data=$(unzip -p "$filename" audit.fvdl 2>/dev/null)
+if [ $? -ne 0 ] || [ -z "$data" ]; then
+  echo "Error: Failed to unzip 'audit.fvdl' from '$filename' or file is empty."
+  exit 1
+fi
 
-app_name=`cat audit.fvdl | grep -i "<BuildID>" | cut -d '>' -f 2 | cut -d '<' -f 1`
+app_name=$(xmllint --xpath 'string(//*[local-name()="BuildID"])' - <<< "$data" 2>/dev/null)
 #echo "$app_name"
 
-n_vulns=`cat audit.fvdl | xmllint --xpath "//*/*[local-name()='Vulnerabilities']" - | grep "<Vulnerability>" | wc -l | xargs`
+n_vulns=$(xmllint --xpath 'count(//*[local-name()="Vulnerability"])' - <<< "$data" 2>/dev/null)
 echo "Found $n_vulns vulnerabilities"
 
-# We now have the vulnerabilities references
-declare -a vulns
+RULES_DATA=$(xmllint --xpath '//*[local-name()="RuleInfo"]' - <<< "$data" 2>/dev/null)
 
-for i in $(seq 1 $n_vulns);
-do
-  vulns[$i]=`cat audit.fvdl | xmllint --xpath "//*/*[local-name()='Vulnerabilities']/*[$i]/*[local-name()='ClassInfo']/*[local-name()='ClassID']/text()" -`
-#uncomment for debug  echo "${vulns[$i]}"
-done
-
-
-declare -a impact
-declare -a probability
-declare -a status_vuln
 declare -i vuln_critical=0;
 declare -i vuln_high=0;
 declare -i vuln_medium=0;
 declare -i vuln_low=0;
+declare -i vuln_unknown=0;
 
-for i in $(seq 1 $n_vulns);
-do
-  impact[$i]=`cat audit.fvdl | xmllint --xpath "//*/*[local-name()='RuleInfo']/*[name()='Rule' and @id='${vulns[$i]}']" - | grep -i "\"impact\"" | cut -d '>' -f 2 | cut -d '<' -f 1 `
-  probability[$i]=`cat audit.fvdl | xmllint --xpath "//*/*[local-name()='RuleInfo']/*[name()='Rule' and @id='${vulns[$i]}']" - | grep -i "\"probability\"" | cut -d '>' -f 2 | cut -d '<' -f 1 `
-#uncomment for debug  echo "impact ${impact[$i]} and probability ${probability[$i]}"
+# Get vulnerabilities
+readarray -t vulnerabilities < <(xmllint --xpath '//*[local-name()="Vulnerability"]' - <<< "$data" 2>/dev/null)
 
-   if [ "$(echo "${impact[$i]} >= 2.5" | bc) " -eq 1 ] && [ "$(echo "${probability[$i]} >= 2.5" | bc)" -eq 1 ]
-   then
-     status_vuln[$i]="Critical"
-     vuln_critical+=1;
-   elif [ "$(echo "${impact[$i]} >= 2.5" | bc) " -eq 1 ] && [ "$(echo "${probability[$i]} <= 2.5" | bc)" -eq 1 ]
-   then
-     status_vuln[$i]="High"
-     vuln_high+=1;
-   elif [ "$(echo "${impact[$i]} <= 2.5" | bc)" -eq 1 ] && [ "$(echo "${probability[$i]} >= 2.5" | bc)" -eq 1 ]
-   then
-     status_vuln[$i]="Medium"
-     vuln_medium+=1;
-   else
-     status_vuln[$i]="Low"
-     vuln_low+=1;
-   fi
-#uncomment for debug   echo ${status_vuln[$i]}
+# Fix array (every tag is in a newline but we want the complete <Vulnerability>...</Vulnerability> in a single array position)
+declare -a vulns
+declare -i pos=0
+for vuln in "${vulnerabilities[@]}"; do
+  vulns[pos]+="$vuln"
+  if [[ "$vuln" =~ "</Vulnerability>" ]]; then
+    pos+=1
+  fi
 done
-# clean up
-`rm -f audit.fvdl`
 
-echo "The $app_name has $vuln_critical critical vulns and $vuln_high high, ones!"
-if [ $vuln_critical -gt 0 ] ||  [ $vuln_high -gt 0 ] 
+
+# Loop through each vulnerability stored in the array
+for vuln in "${vulns[@]}"; do
+    class_id=$(echo "$vuln" | xmllint --xpath 'string(//*[local-name()="ClassID"])' - 2>/dev/null)
+    if [ -z "$class_id" ]; then
+      continue
+    fi
+    
+    confidence=$(echo "$vuln" | xmllint --xpath 'string(//*[local-name()="Confidence"])' - 2>/dev/null)
+
+    # If no ClassID or Confidence, mark as Unknown and continue
+    if [ -z "$confidence" ]; then
+      vuln_unknown+=1;
+      continue
+    fi
+    
+    # Find the corresponding rule using ClassID
+    rules=$(echo "$RULES_DATA" | xmllint --xpath "//*[local-name()='Rule'][@id='$class_id']" - 2>/dev/null)
+
+    # If no rule is found, mark as Unknown and continue
+    if [ -z "$rules" ]; then
+      vuln_unknown+=1;
+      continue
+    fi
+    
+    # Extract values from the rule XML
+    impact=$(echo "$rules" | xmllint --xpath 'string(//*[local-name()="Group"][@name="Impact"])' - 2>/dev/null)
+    accuracy=$(echo "$rules" | xmllint --xpath 'string(//*[local-name()="Group"][@name="Accuracy"])' - 2>/dev/null)
+    probability=$(echo "$rules" | xmllint --xpath 'string(//*[local-name()="Group"][@name="Probability"])' - 2>/dev/null)
+    
+    # Use bc for floating-point calculations
+    # Handle empty values by defaulting to 0.0
+    impact=${impact:-0.0}
+    accuracy=${accuracy:-0.0}
+    probability=${probability:-0.0}
+    
+    # Calculate likelihood
+    likelihood=$(echo "scale=1; ($accuracy * $confidence * $probability) / 25" | bc)
+    
+    # Determine severity based on the Impact/Likelihood matrix    
+    if [ $(echo "$impact >= 2.5 && $likelihood >= 2.5" | bc) -eq 1 ]; then
+      vuln_critical+=1;
+    elif [ $(echo "$impact >= 2.5 && $likelihood < 2.5" | bc) -eq 1 ]; then
+      vuln_high+=1;
+    elif [ $(echo "$impact < 2.5 && $likelihood >= 2.5" | bc) -eq 1 ]; then
+      vuln_medium+=1;
+    else
+      vuln_low+=1;
+    fi
+done
+
+#echo "The $app_name has $vuln_critical critical vulns and $vuln_high high, ones!"
+echo "Critical: $vuln_critical"
+echo "High: $vuln_high"
+echo "Medium: $vuln_medium"
+echo "Low: $vuln_low"
+
+if [ $vuln_critical -gt 0 ] ||  [ $vuln_high -gt 0 ] 
    then
 	   echo "Pipeline should break!"
 	   exit 1;
